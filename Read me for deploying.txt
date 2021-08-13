@@ -1,0 +1,83 @@
+1. 导入类型和属性
+
+在%WT_HOME%\loadFiles\ext\yongc\plm目录下执行：
+windchill wt.load.LoadFileSet -file loadSet.xml -Unattended -u wcadmin -p wcadmin -NOSERVERSTOP
+
+2.建立PartMaterialLink模型对象
+在windchill shell中执行命令：ant -f bin/tools.xml class -Dclass.includes=ext/yongc/plm/part/link/*
+执行成功后，再执行：ant -f bin/tools.xml sql_script -Dgen.input=ext.yongc.plm.part.link.*
+最后将生成的SQL文件导入到数据库中
+
+3.在文档下创建工艺路线 子类型，内部名称：com.yongc.DOC_GYLX
+*****************20190920**************************************
+1.更改通告下创建：技术通知书变更单  com.yongc.JSTZSChangeOrder2
+                               图样文件目录变更单 com.yongc.TYWJMLChangeOrder2
+2.升级请求下创建：技术通知书审签 com.yongc.JSTZSPromotionNotice
+                               图样文件目录审签  com.yongc.TYWJMLPromotionNotice
+*****************20190921**************************************
+1.更改通告下创建：重要度分级表变更单  com.yongc.ZYDFJChangeOrder2
+2.升级请求下创建：重要度分级表审签 com.yongc.ZYDFJPromotionNotice
+****************20171127**********************************
+1.建立WGJPartLink模型对象
+在windchill shell中执行命令：ant -f bin/tools.xml class -Dclass.includes=ext/yongc/plm/part/link/WGJPartLink
+执行成功后，再执行：ant -f bin/tools.xml sql_script -Dgen.input=ext.yongc.plm.part.link.WGJPartLink.java
+最后将生成的SQL文件导入到数据库中
+2.新建以下三个组：
+外购件_审核组
+外购件_批准组
+外购件_管理员组
+3.在文档下新建内部名称为com.yongc.WGJSQDoc，显示名称为外购件申请单的对象
+4.导入wgj工作流表单模板
+5.导入外购件生效工作流
+********************** 20171218 *******************
+1.导入三维变更流程
+2.导入MBOM变更流程
+3.导入ECN类型和属性
+4.上传名称为：齐套性检查配置文件的文档
+*******************20171218 ***************************
+1.创建DocItemLink对象
+ant -f bin/tools.xml class -Dclass.includes=ext/yongc/plm/doc/link/*
+ant -f bin/tools.xml sql_script -Dgen.input=ext.yongc.plm.doc.link.*
+2.在文档下创建文件分发包:com.yongc.DeliveryPackage
+3.新建deliveryPackage工作流表单模板
+4.创建以下组
+电机车间
+生产制造部
+一机车间
+二机车间
+三机车间
+采购部
+电机事业部
+新产品试制部
+冲压
+铆焊
+电控国铁
+电控城轨
+电控模块
+风电事业部
+机加事业部
+外协加工
+运营保障部
+电机试制部
+元件分厂
+市场营销部
+半导体分公司
+检修事业部
+西安永电金风
+西安电机分公司
+浸漆车间
+线圈车间
+试验基地
+物流中心
+西安档案
+工程技术部
+财务部
+永济监造项目部
+质量检验部
+质量保证部
+新技术研究开发部
+模具分厂
+中试基地
+5.导入
+
+
