@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project [
+    <!ENTITY ws_env SYSTEM "../../../bin/adminTools/WebServices/common/common-env.jws_xml">
+    <!ENTITY ws_server SYSTEM "../../../bin/adminTools/WebServices/common/common-server.jws_xml">
+]>
+<project name="TestJavaService" default="all">
+  <property name="webservice.class" value="ext.yongc.plm.webservice.creo" />
+  <property name="security.policy" value="userNameAuthSymmetricKeys" />
+
+  &ws_env; 
+  &ws_server;
+</project>

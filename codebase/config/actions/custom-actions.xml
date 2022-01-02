@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+
+<listofactions>
+<objecttype name="navigation" class=""
+		resourceBundle="ext.yongc.plm.resource.YJNavigationRB">
+		<action name="YJMgt" renderType="GENERAL">
+			<command class="netmarkets" method="servlet/Navigation?tab=YJMgt"
+				windowType="page" />
+		</action>
+	</objecttype>
+	<objecttype name="report" class=""
+		resourceBundle="ext.yongc.plm.resource.YJReportRB">
+		<action name="bomReport" renderType="GENERAL">
+			<command url="/netmarkets/jsp/ext/yongc/plm/report/bomReport.jsp" 
+				windowType="page" />
+		</action>
+		<action name="bomReport2" renderType="GENERAL">
+			<command url="/netmarkets/jsp/ext/yongc/plm/report/bomReport.jsp" 
+				windowType="popup" />
+		</action>
+		<action name="tuyangmuluReport" renderType="GENERAL">
+			<command url="/netmarkets/jsp/ext/yongc/plm/report/tuyangmuluReport.jsp" 
+				windowType="page" />
+		</action>
+		<action name="tuyangmuluReport2" >
+			<command url="/netmarkets/jsp/ext/yongc/plm/report/tuyangmuluReport.jsp" 
+				windowType="popup" />
+		</action>
+		<action name="wenjianmuluReport" renderType="GENERAL">
+			<command url="/netmarkets/jsp/ext/yongc/plm/report/wenjianmuluReport.jsp" 
+				windowType="page" />
+		</action>
+		<action name="wenjianmuluReport2" renderType="GENERAL">
+			<command url="/netmarkets/jsp/ext/yongc/plm/report/wenjianmuluReport.jsp" 
+				windowType="popup" />
+		</action>
+	</objecttype>
+	
+ <objecttype name="yjpromotion"  class="wt.maturity.PromotionNotice" resourceBundle="ext.yongc.plm.resource.YJPromotionRB">
+	 <action name="create3DDesignPromotionNotice" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="Create3DDesignPromotionNoticeFilter"/>
+	  </action>
+	   <action name="collectReviewDocStep" preloadWizardPage="false" required="true" >
+           <command class="ext.yongc.plm.promotion.forms.processors.YJPromotionObjectsFormDelegate" windowType="wizard_step"/>
+       </action>
+	   <action name="add3DDoc" ajax="row">
+      	<command class="com.ptc.windchill.enterprise.maturity.forms.processors.PromotablePickerFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="Add3DActionFilter"/>
+      </action>
+       <action name="addDoc" ajax="row">
+      	<command class="com.ptc.windchill.enterprise.maturity.forms.processors.PromotablePickerFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="AddDocActionFilter"/>
+      </action>
+       <action name="yjPromotionObjects" >
+          <command windowType="page"/>
+           <includeFilter name="YJPromotionTaskActionFilter"/>
+       </action>
+         <action name="yjMBOMPromotionList" >
+          <command windowType="page"/>
+           <includeFilter name="YJMBOMPromotionListActionFilter"/>
+       </action>
+       
+       <action name="gangjiegouhanjie" renderType="GENERAL">
+         <command onClick="setGongYiType('钢结构焊接')" windowType="no_content"/>
+       </action>
+        <action name="gangjiegou" >
+           <command onClick="setGongYiType('钢结构')" windowType="no_content"/>
+       </action>
+        <action name="jijia" >
+           <command onClick="setGongYiType('机加')" windowType="no_content"/>
+       </action>
+        <action name="buxian" >
+         <command onClick="setGongYiType('布线')" windowType="no_content"/>
+       </action>
+        <action name="zuzhuang" >
+           <command onClick="setGongYiType('组装')" windowType="no_content"/>
+       </action>
+        <action name="biaomian" >
+           <command onClick="setGongYiType('表面')" windowType="no_content"/>
+       </action>
+        <action name="jueyuangongyi" >
+          <command onClick="setGongYiType('绝缘工艺')" windowType="no_content"/>
+       </action>
+        <action name="removeGongYi" >
+          <command onClick="removeGongYi()" windowType="no_content"/>
+       </action>
+       <action name="createMBOMPromotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateMBOMPromotionNoticeFilter"/>
+	  </action>
+	  <action name="collectMBOMStep" preloadWizardPage="false" required="true" >
+           <command class="ext.yongc.plm.promotion.forms.processors.YJPromotionObjectsFormDelegate" windowType="wizard_step"/>
+       </action>
+        <action name="createYFDocPromotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateYFDocPromotionFilter"/>
+	  </action>
+	   <action name="createGYDocPromotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateGYDocPromotionFilter"/>
+	  </action>
+	  <action name="createGZDocPromotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateGZDocPromotionFilter"/>
+	  </action>
+	   <action name="createFXDoc1Promotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateFXDoc1PromotionFilter"/>
+	  </action>
+	   <action name="createFXDoc2Promotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateFXDoc2PromotionFilter"/>
+	  </action>
+	   <action name="createMBDoc1Promotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateMBDoc1PromotionFilter"/>
+	  </action>
+	   <action name="createMBDoc2Promotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateMBDoc2PromotionFilter"/>
+	  </action>
+	  <action name="createTYWJMLPromotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateTYWJMLPromotionFilter"/>
+	  </action>
+	 <action name="createJSTZSPromotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateJSTZSPromotionFilter"/>
+	  </action>
+	  <action name="createZYDFJPromotion" selectRequired="true" ajax="component" uicomponent="PROMOTE">
+	       <description>Promote create wizard</description>
+	        <command class="com.ptc.windchill.enterprise.maturity.forms.processors.CreatePromotionRequestFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="OptionSetLocalRuleContextFilter"/>
+	         <includeFilter name="restrictGuestMembers"/>        
+	         <includeFilter name="manAuthorized"/>
+	         <includeFilter name="CreateZYDFJPromotionFilter"/>
+	  </action>
+	 
+ </objecttype>
+ <objecttype name="yjchange"  class="wt.change2.WTChangeOrder2" resourceBundle="ext.yongc.plm.resource.YJChangeRB">
+     <action name="create3DDesignChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="Create3DDesignChangeOrder2Filter"/>
+      </action>
+       <action name="create_wizardImplementationPlanStep" id="create_wizardImplementationPlanStep" preloadWizardPage="false" required="true" beforeVK="preloadImplementationStep" afterJS="PTC.change.validateImplementationTable">
+         <description>Implementation plan for create wizard step</description>
+         <component name="yjchange.wizardImplementationPlan" class="com.ptc.windchill.enterprise.change2.forms.delegates.ImplementationPlanFormDelegate" windowType="wizard_step"/>
+      </action>
+       <action name="editOnCreateChangeTask" ajax="row">
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeTaskFormProcessor" method="execute" windowType="lightbox" 
+         url="netmarkets/jsp/yjchange/wizardCreateChangeTask.jsp?isIframeWizard=true&amp;resizeIframeWizard=false"/>
+      </action>
+       <action name="wizardCreateChangeTask" ajax="row">
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeTaskFormProcessor" method="execute" windowType="lightbox" 
+         url="netmarkets/jsp/yjchange/wizardCreateChangeTask.jsp?isIframeWizard=true&amp;resizeIframeWizard=false"/>
+      </action>
+       <action name="affectedAndResultingItemsStep" id="affectedAndResultingItems" preloadWizardPage="false" required="false">
+         <command class="com.ptc.windchill.enterprise.change2.forms.delegates.AffectedAndResultingItemsFormDelegate" windowType="wizard_step"/>
+      </action>
+       <action name="addAffectedObjects" ajax="row" renderType="GENERAL">
+         <command windowType="new"/>
+      </action>
+      <action name="affectedAndResultingItemsStep" id="affectedAndResultingItems" preloadWizardPage="false" required="false">
+         <command class="com.ptc.windchill.enterprise.change2.forms.delegates.AffectedAndResultingItemsFormDelegate" windowType="wizard_step"/>
+      </action>
+     <action afterVK="setAttributesWizStep" id="defineItemAttributesWizStep" name="yjdefineItemAttributesWizStep" preloadWizardPage="false" required="true" 
+          afterJS="prvalidate" >
+            <component name="defineItemAttributesWizStep" typeBased="true" windowType="wizard_step"/>
+      </action>
+       <action name="editChangeTask" ajax="row">
+         <description>Edit a change task</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.EditChangeTaskFormProcessor" method="execute" windowType="lightbox" 
+         url="netmarkets/jsp/yjchange/editChangeTask.jsp?isIframeWizard=true&amp;resizeIframeWizard=false"/>
+         <includeFilter name="hideForChangeTemplates"/> 
+      </action>
+       <action name="yjAffectedObject" >
+         <component name="workflowTask.pbo" urlParams="pboCompId=changemanagement.affecteddatatable&amp;useTypeBased=true&amp;enableAddToWorkspace=true"/>
+         <includeFilter name="YJAffectedAndResultObjectTaskFilter"/>
+      </action>
+       <action name="yjResultObject" >
+        <command windowType="page"/>
+         <includeFilter name="YJAffectedAndResultObjectTaskFilter"/>
+      </action>
+      
+      <action name="createMBOMChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateMBOMChangeOrder2Filter"/>
+      </action>
+       <action name="createYFDocChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateYFDocChangeOrder2Filter"/>
+      </action>
+        <action name="createMB1DocChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateMB1DocChangeOrder2Filter"/>
+      </action>
+       <action name="createMB2DocChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateMB2DocChangeOrder2Filter"/>
+      </action>
+       <action name="createFX1DocChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateFX1DocChangeOrder2Filter"/>
+      </action>
+        <action name="createFX2DocChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateFX2DocChangeOrder2Filter"/>
+      </action>
+       <action name="createGYDocChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateGYDocChangeOrder2Filter"/>
+      </action>
+       <action name="createGZDocChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateGZDocChangeOrder2Filter"/>
+      </action>
+       <action name="createTYWJMLChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateTYWJMLChangeOrder2Filter"/>
+      </action>
+      <action name="createJSTZSChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateJSTZSChangeOrder2Filter"/>
+      </action>
+      <action name="createZYDFJChangeOrder2" uicomponent="CREATE_CHANGENOTICE" ajax="component">
+         <description>Create change notice</description>
+         <command class="com.ptc.windchill.enterprise.change2.forms.processors.CreateChangeNoticeFormProcessor" method="execute" windowType="popup"/>
+         <includeFilter name="OptionSetLocalRuleContextFilter"/> 
+         <includeFilter name="sandboxSharingValidationSimple"/>
+         <includeFilter name="restrictGuestMembers"/>
+         <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+          <includeFilter name="CreateZYDFJChangeOrder2Filter"/>
+      </action>
+       <action ajax="row" name="attachments_step" postloadJS="preAttachmentsStep" preloadWizardPage="false" uicomponent="ATTACHMENTS" required="true" >
+            <command class="com.ptc.windchill.enterprise.attachments.forms.SecondaryAttachmentsSubFormProcessor" windowType="wizard_step"/>
+            <includeFilter name="hideFromDTI"/>
+            <includeFilter name="EDACompareFilter"/>
+      </action>
+  </objecttype>
+  <objecttype name="yjdoc"  class="wt.doc.WTDocument" resourceBundle="ext.yongc.plm.resource.YJDocRB">
+     <action name="createGYLX" uicomponent="CREATE_DOC" dtiUpload="true" ajax="row">
+         <command class="ext.yongc.plm.doc.forms.processors.CreateGYLXDocFormProcessor" method="execute" windowType="popup" onClick="validateCreateLocation(event)"/>
+         <includeFilter name="projectM4D" />
+         <includeFilter name="showNewActionPreValidation" />
+          <includeFilter name="CreateMaterialLinkActionFilter" />
+      </action>
+       <action name="gylxList" >
+       </action>
+        <action name="viewGYLX" >
+          <command   windowType="popup"/>
+       </action>
+        <action name="deleteGYLX" >
+          <command   class="ext.yongc.plm.doc.forms.processors.GYLXDocumentCommand" method="deleteGYLX"/>
+          <includeFilter name="DeleteGYLXFilter" />
+       </action>
+       <action name="createDeliveryPackage" uicomponent="CREATE_DOC" dtiUpload="true" ajax="row">
+         <command class="ext.yongc.plm.doc.forms.processors.CreateDeliveryPackageProcessor" method="execute" windowType="popup" onClick="validateCreateLocation(event)"/>
+         <includeFilter name="projectM4D" />
+         <includeFilter name="showNewActionPreValidation" />
+          <includeFilter name="CreateDeliveryPackageFilter" />
+      </action>
+       <action name="createDeliveryPackage_step" preloadWizardPage="false" required="true">
+          <command   windowType="wizard_step"/>
+       </action>
+        <action name="deliveryPackageList" >
+             <includeFilter name="DeliveryPackageListFilter"/>
+       </action>
+        <action name="addPackageItem" >
+          <command   windowType="popup"/>
+       </action>
+         <action name="removePackageItem" >
+          <command onClick="removePackageItem()" windowType="no_content"/>
+       </action>
+   </objecttype>
+    <objecttype name="yjpart"  class="wt.part.WTPart" resourceBundle="ext.yongc.plm.resource.YJPartRB">
+     <action name="createMaterialLink" >
+          <command class="ext.yongc.plm.part.forms.processors.PartMaterialLinkCommand" method="CreatePartMaterialLink"  windowType="popup"/>
+           <includeFilter name="CreateMaterialLinkActionFilter" />
+      </action>
+       <action name="createMaterialLinkTableStep" >
+          <command   windowType="wizard_step"/>
+       </action>
+       <action name="editMaterialPart" >
+         <command class="ext.yongc.plm.part.forms.processors.PartMaterialLinkCommand" method="EditPartMaterialLink"  windowType="popup" />
+           <includeFilter name="CreateMaterialLinkActionFilter" />
+       </action>
+        <action name="editMaterialLinkTableStep" >
+          <command   windowType="wizard_step"/>
+       </action>
+       <action name="addMaterialPart" ajax="row">
+      	<command  windowType="popup"/>
+      </action>
+       <action name="removeMaterialPart" >
+      	  <command class="ext.yongc.plm.part.forms.processors.PartMaterialLinkCommand" method="DeletePartMaterialLink"  />
+         <includeFilter name="CreateMaterialLinkActionFilter" />
+      </action>
+        <action name="materialPartList" >
+      </action>
+       <action name="viewMaterialPartList" >
+        <command   windowType="popup"/>
+      </action>
+	 <action name="createWGJ" uicomponent="CREATE_DOC" dtiUpload="true" ajax="row">>
+	        <command class="ext.yongc.plm.part.forms.processors.CreateWGJFormProcessor" method="execute" windowType="popup"/>
+	         <includeFilter name="projectM4D" />
+         <includeFilter name="showNewActionPreValidation" />
+	         <includeFilter name="createWGJFilter"/>
+	  </action>
+	   <action name="createWGJ_step" preloadWizardPage="false" required="true">
+          <command   windowType="wizard_step"/>
+       </action>
+        <action name="addWGJ" >
+          <command   windowType="popup"/>
+       </action>
+         <action name="removeWGJ" >
+          <command onClick="removeWGJ()" windowType="no_content"/>
+       </action>
+         <action name="wgjList" >
+         <includeFilter name="WGJListFilter"/>
+       </action>
+       
+       <action name="qitaoxing" renderType="GENERAL">
+			<command url="/netmarkets/jsp/ext/yongc/plm/rule/qitaoxing.jsp" 
+				windowType="popup" />
+		</action>
+   </objecttype>
+</listofactions>

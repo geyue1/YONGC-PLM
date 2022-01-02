@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX24.dtd">
+<NmLoader>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>MPM_QoM_CostUnit</csvname>
+      <csvdescription>定义成本单位</csvdescription>
+      <csvbaseUnitSymbol>USD</csvbaseUnitSymbol>
+      <csvnameAndValuePairs></csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>MPMLink_Length</csvname>
+      <csvdescription/>
+      <csvbaseUnitSymbol>m</csvbaseUnitSymbol>
+      <csvnameAndValuePairs></csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+   <csvQuantityOfMeasure handler="wt.units.service.UnitsLoader.createQOM">
+      <csvname>MPMLink_Time</csvname>
+      <csvdescription/>
+      <csvbaseUnitSymbol>s</csvbaseUnitSymbol>
+      <csvnameAndValuePairs></csvnameAndValuePairs>
+   </csvQuantityOfMeasure>
+</NmLoader>

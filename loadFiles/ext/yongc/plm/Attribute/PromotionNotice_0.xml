@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX24.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>YONGC_Custom</csvname>
+      <csvhierarchyDisplayName>YONGC_Custom</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>partOid</csvname>
+      <csvhierarchyDisplayName>partOid</csvhierarchyDisplayName>
+      <csvorganizerPaths>YONGC_Custom</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>partOid</csvdisplay_name>
+      <csvdescription>partOid</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>partOid</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

@@ -1,0 +1,62 @@
+.el-card__header {
+	background-color: #409EFF;
+	padding: 8px 20px;
+}
+
+.el-card__body {
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+}
+
+.look-more {
+	float: right;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.refresh-btn {
+	top: -4px;
+	position: relative;
+	float: right;
+	padding: 3px 0 !important;
+	width: 30px;
+	height: 30px;
+}
+
+.el-divider--horizontal {
+	margin: 5px 0;
+}
+
+.portal-title {
+	color: #FFF;
+}
+
+#option-link-id>.el-button-group>.el-dropdown__caret-button {
+	height: 41px;
+}
+.portal-link{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: left;
+    width:100px;
+}
+.portal-date-td{
+    white-space: nowrap;/*强制不换行*/
+}
+.portal-link-td{
+    width:100%;
+}
+.portal-item {
+    height: 32px;
+}
+.portal-item-table {
+    display: block;
+    overflow: hidden;
+    height: 32px;
+    table-layout:fixed;
+}

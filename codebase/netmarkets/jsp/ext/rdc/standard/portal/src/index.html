@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="UTF-8">
+    <script type="text/javascript" src="../dist/bundle.js"></script>
+	<title>FAW标准件管理</title>
+</head>
+<body>
+
+  <div id="portal-search" style="margin-top:0px;margin-left:25%;margin-bottom:10px;">
+    
+    <el-input id="searchInput" prefix-icon="el-icon-search" v-model="searchInput" @keyup.enter.native="searchPart" :placeholder="searchTooltip" clearable style="width: 50%"></el-input>
+    <el-button type="primary" icon="el-icon-search" @click="searchPart">{{searchBtnText}}</el-button>
+    <el-button type="info" icon="el-icon-search">{{advancedSearchBtnText}}</el-button>
+    <el-drawer
+      :visible.sync="searchTablevisible"
+      direction="rtl"
+      size="80%">
+      <el-table :data="searchData" stripe highlight-current-row  :empty-text="resources.TABLE_EMPTY_TEXT" :height="rightTableHeight">
+          <el-table-column property="partNumber" :label="resources.NUMBER" width="150" fixed>
+          	<template slot-scope="scope">
+              <div v-html="scope.row.partNumber"></div>
+          	</template>
+          </el-table-column>
+          <el-table-column property="partName" :label="resources.NAME" min-width="200" fixed></el-table-column>
+          <el-table-column property="containerName" :label="resources.CONTAINER_NAME" min-width="200"  fixed>
+          </el-table-column>
+          <el-table-column property="partVersion" :label="resources.VERSION" width="60"></el-table-column>
+          <el-table-column property="partState" :label="resources.STATE" width="80"></el-table-column>
+          <el-table-column property="partModifyTime" :label="resources.MODIFY_TIME" width="120">
+          	  <template slot-scope="scope">
+		        <i class="el-icon-time"></i>
+		        <span style="margin-left: 2px">{{ scope.row.partModifyTime }}</span>
+		      </template>
+          </el-table-column>
+          <el-table-column property="partCreateTime" :label="resources.CREATE_TIME" width="120">
+          	<template slot-scope="scope">
+		        <i class="el-icon-time"></i>
+		        <span style="margin-left: 2px">{{ scope.row.partCreateTime }}</span>
+		      </template>
+          </el-table-column>
+          
+        </el-table>
+    </el-drawer>
+    
+    <!--
+    <el-dropdown split-button type="warning" @click="handleClick" id="option-link-id" split-button="true">
+        <i  class="el-icon-link portal-title">&nbsp;</i>{{opLinkBtnText}}
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>黄金糕</el-dropdown-item>
+          <el-dropdown-item>狮子头</el-dropdown-item>
+          <el-dropdown-item>螺蛳粉</el-dropdown-item>
+          <el-dropdown-item>双皮奶</el-dropdown-item>
+          <el-dropdown-item>蚵仔煎</el-dropdown-item>
+        </el-dropdown-menu>
+    </el-dropdown>
+    -->
+  </div>
+  <hr style=" height:2px;border:none;border-top:2px solid  #409EFF;" />
+  <div id="portal-content">
+    
+    <el-card class="box-card" style="width: 32%;float:left;margin-left:1%;margin-top:10px;">
+        <div slot="header" class="clearfix">
+          <i  class="el-icon-s-order portal-title">&nbsp;</i><span class="portal-title">{{resources.MY_TASK}}</span>
+          <el-tooltip class="item" effect="dark" :content="resources.refreshBtnToolTip" placement="bottom-end">
+            <el-button class="refresh-btn" icon="el-icon-refresh" type="success" circle @click="refreshMyTask"></el-button>
+          </el-tooltip>
+      </div>
+      <div v-for="(item,index) in myTaskDates" :key="index" class="text item portal-item">
+          <table class="portal-item-table">
+          	
+          		<tr>
+          			<td class="portal-link-td" v-html="item.itemLink"></td>
+          			<td class="portal-date-td">{{item.dateString}}</td>
+          		</tr>
+          	
+          </table>
+          <!--<el-divider></el-divider>-->
+      </div>
+      <span  v-html="resources.myTaskMoreUrl"></span>
+    </el-card>
+
+    <el-card class="box-card" style="width: 32%;float:left;margin-left:1%;margin-top:10px;">
+        <div slot="header" class="clearfix">
+            <i  class="el-icon-edit-outline portal-title">&nbsp;</i><span class="portal-title">{{resources.CREATE_FORM}}</span>
+        </div>
+      <div v-for="(item,index) in createApplyDates" :key="index" class="text item portal-item">
+          <table class="portal-item-table">
+          	
+          		<tr>
+          			<td class="portal-link-td2" v-html="item.itemLink"></td>
+          		</tr>
+          	
+          </table>
+          <!--<el-divider></el-divider>-->
+      </div>
+        <el-link class="look-more" href="JavaScript:void(0);" type="warning" >&nbsp;</el-link>
+    </el-card>
+    
+    <el-card class="box-card" style="width: 32%;float:left;margin-left:1%;margin-top:10px;">
+            <div slot="header" class="clearfix">
+                <i  class="el-icon-star-off portal-title">&nbsp;</i><span class="portal-title">{{resources.MODEL_SELECTION_GUIDE}}</span>
+            </div>
+     <div v-for="(item,index) in selectionModelDates" :key="index" class="text item portal-item">
+          <table class="portal-item-table">
+          	
+          		<tr>
+          			<td class="portal-link-td" v-html="item.itemLink"></td>
+          			<td class="portal-date-td">{{item.dateString}}</td>
+          		</tr>
+          	
+          </table>
+          <!--<el-divider></el-divider>-->
+      </div>
+            <el-link class="look-more" href="JavaScript:void(0);" type="warning" >&nbsp;</el-link>
+    </el-card>
+
+    
+
+    <el-card class="box-card" style="width: 32%;float:left;margin-left:1%;margin-top:20px;">
+            <div slot="header" class="clearfix">
+              <i  class="el-icon-message portal-title">&nbsp;</i><span class="portal-title">{{resources.NOTICE_CENTRE}}</span>
+              <el-tooltip class="item" effect="dark" :content="resources.refreshBtnToolTip" placement="bottom-end">
+                <el-button class="refresh-btn" icon="el-icon-refresh" type="success" circle @click="refreshNotice"></el-button>
+              </el-tooltip>
+          </div>
+     <div v-for="(item,index) in noticeDates" :key="index" class="text item portal-item">
+          <table class="portal-item-table">
+          	
+          		<tr>
+          			<td class="portal-link-td" v-html="item.itemLink"></td>
+          			<td class="portal-date-td">{{item.dateString}}</td>
+          		</tr>
+          	
+          </table>
+          <!--<el-divider></el-divider>-->
+      </div>
+           <span @click="noticekMore" v-html="resources.noticekMoreUrl"></span>
+    </el-card>
+    
+    <el-card class="box-card" style="width: 32%;float:left;margin-left:1%;margin-top:20px;">
+        <div slot="header" class="clearfix">
+          <i  class="el-icon-download portal-title">&nbsp;</i><span class="portal-title">{{resources.DOWNLOAD_CENTRE}}</span>
+          <el-tooltip class="item" effect="dark" :content="resources.refreshBtnToolTip" placement="bottom-end">
+            <el-button class="refresh-btn" icon="el-icon-refresh" type="success" circle @click="refreshDownload"></el-button>
+          </el-tooltip>
+      </div>
+      <div v-for="(item,index) in downloadDates" :key="index" class="text item portal-item">
+          <table class="portal-item-table">
+          	
+          		<tr>
+          			<td class="portal-link-td" v-html="item.itemLink"></td>
+          			<td class="portal-date-td">{{item.dateString}}</td>
+          		</tr>
+          	
+          </table>
+          <!--<el-divider></el-divider>-->
+      </div>
+    <span  @click="downloadMore"  v-html="resources.downloadMoreUrl"></span>
+    </el-card>
+    <el-card class="box-card" style="width: 32%;float:left;margin-left:1%;margin-top:20px;">
+        <div slot="header" class="clearfix">
+            <i  class="el-icon-s-data portal-title">&nbsp;</i><span class="portal-title">{{resources.REPORT_CENTRE}}</span>
+        </div>
+        <div v-for="(item,index) in reportsDates" :key="index" class="text item portal-item">
+          <table class="portal-item-table">
+          	
+          		<tr>
+          			<td class="portal-link-td2" v-html="item.itemLink"></td>
+          		</tr>
+          	
+          </table>
+          <!--<el-divider></el-divider>-->
+      </div>
+        <el-link class="look-more" href="JavaScript:void(0);" type="warning" >&nbsp;</el-link>
+    </el-card>
+    <el-drawer
+      :visible.sync="moreDocTablevisible"
+      direction="rtl"
+      size="80%">
+      <el-table :data="docsDatas" stripe highlight-current-row  :empty-text="resources.TABLE_EMPTY_TEXT" :height="rightTableHeight">
+          <el-table-column property="docNumber" :label="resources.NUMBER" width="150" fixed>
+          	<template slot-scope="scope">
+              <div v-html="scope.row.docNumber"></div>
+          	</template>
+          </el-table-column>
+          <el-table-column property="docName" :label="resources.NAME" min-width="200" fixed></el-table-column>
+          <el-table-column property="docPrimary" :label="resources.PRIMARY" min-width="200"  fixed>
+          	<template slot-scope="scope">
+              <div v-html="scope.row.docPrimary"></div>
+          	</template>
+          </el-table-column>
+          <el-table-column property="docVersion" :label="resources.VERSION" width="60"></el-table-column>
+          <el-table-column property="docState" :label="resources.STATE" width="80"></el-table-column>
+          <el-table-column property="docDesc" :label="resources.DESC"></el-table-column>
+          <el-table-column property="docModifyTime" :label="resources.MODIFY_TIME" width="120">
+          	  <template slot-scope="scope">
+		        <i class="el-icon-time"></i>
+		        <span style="margin-left: 2px">{{ scope.row.docModifyTime }}</span>
+		      </template>
+          </el-table-column>
+          <el-table-column property="docCreateTime" :label="resources.CREATE_TIME" width="120">
+          	<template slot-scope="scope">
+		        <i class="el-icon-time"></i>
+		        <span style="margin-left: 2px">{{ scope.row.docCreateTime }}</span>
+		      </template>
+          </el-table-column>
+          
+        </el-table>
+    </el-drawer>
+    
+  </div>
+</body>
+
+ 
+</html>

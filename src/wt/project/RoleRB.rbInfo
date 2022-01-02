@@ -1,0 +1,813 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.UUID=8db111cc-5428-4d8b-b2e9-ed3a5b20baf0
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+APPROVER.value=Approver
+APPROVER.shortDescription=Approver role
+APPROVER.order=10
+
+APPROVER_LEVEL_1.value=Approver - Level I
+APPROVER_LEVEL_1.shortDescription=Approver role for level one approval in OOTB template Two Level Approval Process
+APPROVER_LEVEL_1.order=11
+
+APPROVER_LEVEL_2.value=Approver - Level II
+APPROVER_LEVEL_2.shortDescription=Approver role for level two approval in OOTB template Two Level Approval Process
+APPROVER_LEVEL_2.order=12
+
+ASSIGNEE.value=Assignee
+ASSIGNEE.shortDescription=Asignee role
+ASSIGNEE.order=40
+
+AUDITOR.value=Auditor
+AUDITOR.shortDescription=Auditor role
+AUDITOR.order=20
+
+AUTHOR.value=Author
+AUTHOR.shortDescription=Author role
+AUTHOR.order=30
+
+CHANGE MANAGER.value=Change Manager
+CHANGE MANAGER.shortDescription=Change Manager role
+CHANGE MANAGER.order=50
+
+CHANGE OWNER.value=Change Owner
+CHANGE OWNER.shortDescription=Change Owner role
+CHANGE OWNER.order=60
+
+CHEMICAL ENGINEER.value=Chemical Engineer
+CHEMICAL ENGINEER.shortDescription=Chemical Engineer role
+CHEMICAL ENGINEER.order=70
+
+COLLABORATION MANAGER.value=Collaboration Manager
+COLLABORATION MANAGER.shortDescription=Collaboration Manager role
+COLLABORATION MANAGER.order=72
+
+CONSULTANT.value=Consultant
+CONSULTANT.shortDescription=Consultant role
+CONSULTANT.order=73
+
+CONTRACTOR.value=Contractor
+CONTRACTOR.shortDescription=Contractor role
+CONTRACTOR.order=75
+
+CONTROLLER.value=Controller
+CONTROLLER.shortDescription=Controller role
+CONTROLLER.order=80
+
+CUSTOMER.value=Customer
+CUSTOMER.shortDescription=Customer role
+CUSTOMER.order=90
+
+DESIGN ENGINEER.value=Design Engineer
+DESIGN ENGINEER.shortDescription=Design Engineer role
+DESIGN ENGINEER.order=110
+
+DESIGNER.value=Designer
+DESIGNER.shortDescription=Designer role
+DESIGNER.order=100
+
+DETAILER.value=Detailer
+DETAILER.shortDescription=Detailer role
+DETAILER.order=120
+
+ENGINEER.value=Engineer
+ENGINEER.shortDescription=Engineer role
+ENGINEER.order=125
+
+FIELD ENGINEER.value=Field Engineer
+FIELD ENGINEER.shortDescription=Field Engineer role
+FIELD ENGINEER.order=130
+
+GROUP LEADER.value=Group Leader
+GROUP LEADER.shortDescription=Group Leader role
+GROUP LEADER.order=135
+
+HYDRAULIC ENGINEER.value=Hydraulic Engineer
+HYDRAULIC ENGINEER.shortDescription=Hydraulic Engineer role
+HYDRAULIC ENGINEER.order=140
+
+ILLUSTRATOR.value=Illustrator
+ILLUSTRATOR.shortDescription=Illustrator Role
+ILLUSTRATOR.order=145
+
+#(This is the correct spelling for implementor - please do not change)
+IMPLEMENTOR.value=Implementor
+IMPLEMENTOR.shortDescription=Implementor role 
+IMPLEMENTOR.order=150
+
+INDUSTRIAL ENGINEER.value=Industrial Engineer
+INDUSTRIAL ENGINEER.shortDescription=Industrial Engineer role
+INDUSTRIAL ENGINEER.order=160
+
+LOGIC ENGINEER.value=Logic Engineer
+LOGIC ENGINEER.shortDescription=Logic Engineer role
+LOGIC ENGINEER.order=170
+
+MANUFACTURER.value=Manufacturer
+MANUFACTURER.shortDescription=Manufacturer role
+MANUFACTURER.order=180
+
+MANUFACTURING ENGINEER.value=Manufacturing Engineer
+MANUFACTURING ENGINEER.shortDescription=Manufacturing Engineer role
+MANUFACTURING ENGINEER.order=190
+
+MANUFACTURING MANAGER.value=Manufacturing Manager
+MANUFACTURING MANAGER.shortDescription=Manufacturing Manager role
+MANUFACTURING MANAGER.order=200
+
+MATERIAL ENGINEER.value=Material Engineer
+MATERIAL ENGINEER.shortDescription=Material Engineer role
+MATERIAL ENGINEER.order=210
+
+MEMBERS.value=Members
+MEMBERS.shortDescription=Members role
+MEMBERS.order=215
+
+GUEST.value=Guest
+GUEST.shortDescription=Guest role
+GUEST.order=217
+
+NC PROGRAMMER.value=NC Programmer
+NC PROGRAMMER.shortDescription=NC Programmer role
+NC PROGRAMMER.order=220
+
+OBSERVER.value=Observer
+OBSERVER.shortDescription=Observer role
+OBSERVER.order=230
+
+OEM.value=OEM
+OEM.shortDescription=OEM role
+OEM.order=233
+
+ORGANIZATION LEADER.value=Organization Leader
+ORGANIZATION LEADER.shortDescription=Organization Leader role
+ORGANIZATION LEADER.order=235
+
+OWNER.value=Owner
+OWNER.shortDescription=Owner role
+OWNER.order=240
+
+PARTS AUTHOR.value=Parts Author
+PARTS AUTHOR.shortDescription=Team member responsible for creating Service Information Parts Lists
+PARTS AUTHOR.order=245
+
+PLANNER.value=Planner
+PLANNER.shortDescription=Planner role
+PLANNER.order=250
+
+PRODUCTION PLANNER.value=Production Planner
+PRODUCTION PLANNER.shortDescription=Production Planner role
+PRODUCTION PLANNER.order=260
+
+PROGRAM DIRECTOR.value=Program Director
+PROGRAM DIRECTOR.shortDescription=Program Director role
+PROGRAM DIRECTOR.order=265
+
+PROGRAM MANAGER.value=Program Manager
+PROGRAM MANAGER.shortDescription=Program Manager role
+PROGRAM MANAGER.order=280
+
+PROJECT ACCOUNTANT.value=Project Accountant
+PROJECT ACCOUNTANT.shortDescription=Project Accountant role
+PROJECT ACCOUNTANT.order=285
+
+PROJECT ADMINISTRATOR.value=Project Administrator
+PROJECT ADMINISTRATOR.shortDescription=Project Administrator role
+PROJECT ADMINISTRATOR.order=287
+
+PROJECT ENGINEER.value=Project Engineer
+PROJECT ENGINEER.shortDescription=Project Engineer role
+PROJECT ENGINEER.order=290
+
+PROJECT MANAGER.value=Project Manager
+PROJECT MANAGER.shortDescription=Project Manager role
+PROJECT MANAGER.order=295
+
+PROJECT SPONSOR.value=Project Sponsor
+PROJECT SPONSOR.shortDescription=Project Sponsor role
+PROJECT SPONSOR.order=297
+
+PROMOTER.value=Promoter
+PROMOTER.shortDescription=Promoter role
+PROMOTER.order=300
+
+PUBLICATIONS MANAGER.value=Publications Manager
+PUBLICATIONS MANAGER.shortDescription=Team member responsible for creating SIS Information Structures and Publication Structures
+PUBLICATIONS MANAGER.order=305
+
+PURCHASING AGENT.value=Purchasing Agent
+PURCHASING AGENT.shortDescription=Purchasing Agent role
+PURCHASING AGENT.order=310
+
+QUALITY ENGINEER.value=Quality Engineer
+QUALITY ENGINEER.shortDescription=Quality Engineer role
+QUALITY ENGINEER.order=320
+
+QUALITY MANAGER.value=Quality Manager
+QUALITY MANAGER.shortDescription=Quality Manager role
+QUALITY MANAGER.order=330
+
+RESOURCE MANAGER.value=Resource Manager
+RESOURCE MANAGER.shortDescription=Resource Manager role
+RESOURCE MANAGER.order=335
+
+REVIEWER.value=Reviewer
+REVIEWER.shortDescription=Reviewer role
+REVIEWER.order=340
+REVIEWER.defaultValue=true
+
+SOFTWARE ENGINEER.value=Software Engineer
+SOFTWARE ENGINEER.shortDescription=Software Engineer role
+SOFTWARE ENGINEER.order=350
+
+SUBMITTER.value=Submitter
+SUBMITTER.shortDescription=Submitter role
+SUBMITTER.order=360
+
+SUGGESTOR.value=Suggester
+SUGGESTOR.shortDescription=Suggester role
+SUGGESTOR.order=370
+
+SUPPLIER.value=Supplier
+SUPPLIER.shortDescription=Supplier role
+SUPPLIER.order=380
+
+SUPPORT ENGINEER.value=Support Engineer
+SUPPORT ENGINEER.shortDescription=Support Engineer role
+SUPPORT ENGINEER.order=390
+
+TEAM LEADER.value=Team Leader
+TEAM LEADER.shortDescription=Team Leader role
+TEAM LEADER.order=395
+
+TESTER.value=Tester
+TESTER.shortDescription=Tester role
+TESTER.order=400
+
+TOOL DESIGNER.value=Tool Designer
+TOOL DESIGNER.shortDescription=Tool Designer role
+TOOL DESIGNER.order=410
+
+VENDOR.value=Vendor
+VENDOR.shortDescription=Vendor role
+VENDOR.order=420
+
+EXPORTER.value=Exporter
+EXPORTER.shortDescription=Replication Exporter role
+EXPORTER.order=430
+
+IMPORTER.value=Importer
+IMPORTER.shortDescription=Replication Importer role
+IMPORTER.order=440
+
+PUBLISHER.value=Publisher
+PUBLISHER.shortDescription=Publisher role
+PUBLISHER.order=450
+
+SUBSCRIBER.value=Subscriber
+SUBSCRIBER.shortDescription=Subscriber role
+SUBSCRIBER.order=460
+
+REVIEW TEAM.value=Review Team
+REVIEW TEAM.shortDescription=Special ProjectLink role for workflow
+REVIEW TEAM.order=470
+
+PROBLEM REPORT TEAM.value=Problem Report Team
+PROBLEM REPORT TEAM.shortDescription=Problem Report Team
+PROBLEM REPORT TEAM.order=500
+
+# This role collects the Problem report authors for change management
+PR AUTHOR.value=Problem Report Author
+PR AUTHOR.shortDescription=Pr Author
+PR AUTHOR.order=501
+
+# This role is the Change Admin I for change management
+CHANGE ADMINISTRATOR I.value=Change Admin I
+CHANGE ADMINISTRATOR I.shortDescription=CAI
+CHANGE ADMINISTRATOR I.order=502
+
+# This role is the Change Admin II for change management
+CHANGE ADMINISTRATOR II.value=Change Admin II
+CHANGE ADMINISTRATOR II.shortDescription=CAII
+CHANGE ADMINISTRATOR II.order=503
+
+# This role is the Change Admin III for change management
+CHANGE ADMINISTRATOR III.value=Change Admin III
+CHANGE ADMINISTRATOR III.shortDescription=CAIII
+CHANGE ADMINISTRATOR III.order=504
+
+# This role is the CRB for a ECR in change management
+CHANGE REQUEST REVIEW BOARD.value=Change Review Board
+CHANGE REQUEST REVIEW BOARD.shortDescription=CRB
+CHANGE REQUEST REVIEW BOARD.order=505
+
+# This role is for the CIB in a ECN in change management
+CHANGE NOTICE IMPLEMENTATION BOARD.value=Change Implementation Board
+CHANGE NOTICE IMPLEMENTATION BOARD.shortDescription=CIB
+CHANGE NOTICE IMPLEMENTATION BOARD.order=506
+
+# This role collects the ECR authors for change management
+ECR AUTHOR.value=Change Request Author
+ECR AUTHOR.shortDescription=Change Request Author
+ECR AUTHOR.order=507
+
+# This role collects the Software Defects authors for change management
+SW DEFECT AUTHOR.value=Software Defect Author
+SW DEFECT AUTHOR.shortDescription=Software Defect Author
+SW DEFECT AUTHOR.order=508
+
+SOURCING MANAGER.value=Sourcing Manager
+SOURCING MANAGER.shortDescription=Sourcing Manager
+SOURCING MANAGER.order=520
+
+SUPPLY CHAIN MANAGER.value=Supply Chain Manager
+SUPPLY CHAIN MANAGER.shortDescription=Supply Chain Manager
+SUPPLY CHAIN MANAGER.order=521
+
+RECIPIENT.value=Recipient
+RECIPIENT.shortDescription=Recipient role
+RECIPIENT.order=522
+
+EVALUATOR.value=Evaluator
+EVALUATOR.shortDescription=Evaluator role
+EVALUATOR.order=523
+
+RESPONDANT.value=Respondant
+RESPONDANT.shortDescription=Respondant role
+RESPONDANT.order=524
+
+#The administrator of an OrgContainer
+ORG ADMIN.value=Organization Administrator
+ORG ADMIN.shortDescription=The administrator of an OrgContainer
+ORG ADMIN.order=600
+
+SHARED TEAM MANAGER.value=Shared Team Manager
+SHARED TEAM MANAGER.shortDescription=A user who can manage the membership of a shared team
+SHARED TEAM MANAGER.order=630
+
+PROJECT CREATOR.value=Project Creator
+PROJECT CREATOR.shortDescription=A user who can create a project in a given organization
+PROJECT CREATOR.order=610
+
+PRODUCT CREATOR.value=Product Creator
+PRODUCT CREATOR.shortDescription=A user who can create a product in a given organization
+PRODUCT CREATOR.order=614
+
+PRODUCT MANAGER.value=Product Manager
+PRODUCT MANAGER.shortDescription=The manager of a product container
+PRODUCT MANAGER.order=616
+
+LIBRARY CREATOR.value=Library Creator
+LIBRARY CREATOR.shortDescription=A user who can create a library in a given organization
+LIBRARY CREATOR.order=618
+
+LIBRARY MANAGER.value=Library Manager
+LIBRARY MANAGER.shortDescription=The manager of a library container
+LIBRARY MANAGER.order=620
+
+QMS MANAGER.value=Quality System Manager
+QMS MANAGER.shortDescription=The manager of a Quality container
+QMS MANAGER.order=755
+
+ESI ADMINISTRATOR.value=ESI Administrator
+ESI ADMINISTRATOR.shortDescription=Special ESI role for ESI workflow
+ESI ADMINISTRATOR.order=700
+
+ESI ENGINEER.value=ESI Engineer
+ESI ENGINEER.shortDescription=Special ESI role for ESI workflow
+ESI ENGINEER.order=701
+
+VP SALES.value=VP Sales
+VP SALES.shortDescription=VP Sales role
+VP SALES.order=710
+
+VP RESEARCH AND DEVELOPMENT.value=VP Research and Development
+VP RESEARCH AND DEVELOPMENT.shortDescription=VP Research and Development
+VP RESEARCH AND DEVELOPMENT.order=720
+
+VP OPERATIONS.value=VP Operations
+VP OPERATIONS.shortDescription=VP Operations role
+VP OPERATIONS.order=730
+
+VP MANUFACTURING.value=VP Manufacturing
+VP MANUFACTURING.shortDescription=VP Manufacturing role
+VP MANUFACTURING.order=740
+
+PLANT MANAGER.value=Plant Manager
+PLANT MANAGER.shortDescription=Plant Manager role
+PLANT MANAGER.order=750
+
+MANUFACTURING ENGINEERING MANAGER.value=Manufacturing Engineering Manager
+MANUFACTURING ENGINEERING MANAGER.shortDescription=Manufacturing Engineering Manager role
+MANUFACTURING ENGINEERING MANAGER.order=760
+
+MARKETING.value=Marketing
+MARKETING.shortDescription=Marketing role
+MARKETING.order=765
+
+QUALITY ASSURANCE MANAGER.value=Quality Assurance Manager
+QUALITY ASSURANCE MANAGER.shortDescription=Quality Assurance Manager role
+QUALITY ASSURANCE MANAGER.order=770
+
+PROCUREMENT MANAGER.value=Procurement Manager
+PROCUREMENT MANAGER.shortDescription=Procurement Manager role
+PROCUREMENT MANAGER.order=780
+
+PROCUREMENT ENGINEER.value=Procurement Engineer
+PROCUREMENT ENGINEER.shortDescription=Procurement Engineer role
+PROCUREMENT ENGINEER.order=790
+
+PURCHASING MANAGER.value=Purchasing Manager
+PURCHASING MANAGER.shortDescription=Purchasing Manager role
+PURCHASING MANAGER.order=800
+
+DESIGN TEAM LEADER.value=Design Team Leader
+DESIGN TEAM LEADER.shortDescription=Design Team Leader role
+DESIGN TEAM LEADER.order=810
+
+PROMOTION APPROVERS.value=Promotion Approvers
+PROMOTION APPROVERS.shortDescription=Team Members for approving Promotion Requests.
+PROMOTION APPROVERS.order=820
+
+PROMOTION REVIEWERS.value=Promotion Reviewers
+PROMOTION REVIEWERS.shortDescription=Team Members for reviewing Promotion Requests.
+PROMOTION REVIEWERS.order=830
+
+VARIANCE AUTHOR.value=Variance Author
+VARIANCE AUTHOR.shortDescription=Variance Author Role
+VARIANCE AUTHOR.order=840
+
+VARIANCE APPROVERS.value=Variance Approvers
+VARIANCE APPROVERS.shortDescription=Team members for approving Variances.
+VARIANCE APPROVERS.order=850
+
+#New Part Introduction roles
+SUPPLY BASE MANAGER.value=Supply Base Manager
+SUPPLY BASE MANAGER.shortDescription=Supply Base Manager
+SUPPLY BASE MANAGER.order=860
+
+COMPONENT ENGINEER.value=Component Engineer
+COMPONENT ENGINEER.shortDescription=Component Engineer
+COMPONENT ENGINEER.order=870
+
+NPR COORDINATOR.value=PR Coordinator
+NPR COORDINATOR.shortDescription=Part Request Coordinator
+NPR COORDINATOR.order=880
+
+EDA LIBRARIAN.value=EDA Librarian
+EDA LIBRARIAN.shortDescription=EDA Librarian
+EDA LIBRARIAN.order=890
+
+MCAD LIBRARIAN.value=MCAD Librarian
+MCAD LIBRARIAN.shortDescription=MCAD Librarian
+MCAD LIBRARIAN.order=900
+
+FOOTPRINT DESIGNER.value=Footprint Designer
+FOOTPRINT DESIGNER.shortDescription=Footprint Designer
+FOOTPRINT DESIGNER.order=910
+
+LOGIC SYMBOL DESIGNER.value=Logic Symbol Designer
+LOGIC SYMBOL DESIGNER.shortDescription=Logic Symbol Designer
+LOGIC SYMBOL DESIGNER.order=920
+
+MCAD DESIGNER.value=MCAD Designer
+MCAD DESIGNER.shortDescription=MCAD Designer
+MCAD DESIGNER.order=930
+
+# These roles are for WorkPackage
+PACKAGE MANAGER.value=Package Manager
+PACKAGE MANAGER.shortDescription=Package Manager
+PACKAGE MANAGER.order=940
+
+PACKAGE CONTRIBUTOR.value=Package Contributor
+PACKAGE CONTRIBUTOR.shortDescription=Package Contributor
+PACKAGE CONTRIBUTOR.order=950
+
+PACKAGE REVIEWER.value=Package Reviewer
+PACKAGE REVIEWER.shortDescription=Package Reviewer
+PACKAGE REVIEWER.order=960
+
+PACKAGE RECIPIENT.value=Package Recipient
+PACKAGE RECIPIENT.shortDescription=Package Recipient
+PACKAGE RECIPIENT.order=970
+
+PACKAGE APPROVER.value=Package Approver
+PACKAGE APPROVER.shortDescription=Package Approver
+PACKAGE APPROVER.order=980
+
+PACKAGE CREATOR.value=Package Creator
+PACKAGE CREATOR.shortDescription=Package Creator
+PACKAGE CREATOR.order=985
+
+OPTION ADMINISTRATOR.value=Option Manager
+OPTION ADMINISTRATOR.shortDescription=Option Manager
+OPTION ADMINISTRATOR.order=990
+
+SYS.value=System
+SYS.shortDescription=System
+SYS.order=1000
+
+CAPAREQUESTER.value=CAPA Requester
+CAPAREQUESTER.shortDescription=CAPA Requester
+CAPAREQUESTER.order=2000
+
+CAPAREVIEWER.value=CAPA Reviewer
+CAPAREVIEWER.shortDescription=CAPA Reviewer
+CAPAREVIEWER.order=2010
+
+CAPAINVESTIGATOR.value=CAPA Investigator
+CAPAINVESTIGATOR.shortDescription=CAPA Investigator
+CAPAINVESTIGATOR.order=2020
+
+CAPAPLANNER.value=CAPA Planner
+CAPAPLANNER.shortDescription=CAPA Planner
+CAPAPLANNER.order=2030
+
+CAPAIMPLEMENTER.value=CAPA Implementer
+CAPAIMPLEMENTER.shortDescription=CAPA Implementer
+CAPAIMPLEMENTER.order=2040
+
+CAPACONFIRMER.value=CAPA Confirmer
+CAPACONFIRMER.shortDescription=CAPA Confirmer
+CAPACONFIRMER.order=2050
+
+CAPAVERIFIER.value=CAPA Verifier
+CAPAVERIFIER.shortDescription=CAPA Verifier
+CAPAVERIFIER.order=2060
+
+CAPAEFFECTIVENESSAPPROVER.value=CAPA Effectiveness Approver
+CAPAEFFECTIVENESSAPPROVER.shortDescription=CAPA Effectiveness Approver
+CAPAEFFECTIVENESSAPPROVER.order=2070
+
+CAPAMANAGER.value=CAPA Manager
+CAPAMANAGER.shortDescription=CAPA Manager
+CAPAMANAGER.order=2080
+
+CAPAPLANAPPROVER.value=CAPA Plan Approver
+CAPAPLANAPPROVER.shortDescription=CAPA Plan Approver
+CAPAPLANAPPROVER.order=2090
+
+CAPAINVESTIGATIONAPPROVER.value=CAPA Investigation Approver
+CAPAINVESTIGATIONAPPROVER.shortDescription=CAPA Investigation Approver
+CAPAINVESTIGATIONAPPROVER.order=2100
+
+CAPAACTIONVERIFIER.value=CAPA Action Verifier
+CAPAACTIONVERIFIER.shortDescription=CAPA Action Verifier
+CAPAACTIONVERIFIER.order=2101
+
+CAPAACTIONEFFECTIVENESSAPPROVER.value=CAPA Action Effectiveness Approver
+CAPAACTIONEFFECTIVENESSAPPROVER.shortDescription=CAPA Action Effectiveness Approver
+CAPAACTIONEFFECTIVENESSAPPROVER.order=2102
+
+ENTITYCREATOR.value=People and Places Creator
+ENTITYCREATOR.shortDescription=People and Places Creator
+ENTITYCREATOR.order=2110
+
+QUALITYPARTCREATOR.value=Quality Part Creator
+QUALITYPARTCREATOR.shortDescription=Quality Part Creator
+QUALITYPARTCREATOR.order=2120
+
+NC_CREATOR.value=Nonconformance Creator
+NC_CREATOR.shortDescription=Nonconformance Creator
+NC_CREATOR.order=2130
+
+NC_EVALUATOR.value=Nonconformance Evaluator
+NC_EVALUATOR.shortDescription=Nonconformance Evaluator
+NC_EVALUATOR.order=2150
+ 
+NC_INVESTIGATOR.value=Nonconformance Investigator
+NC_INVESTIGATOR.shortDescription=Nonconformance Investigator
+NC_INVESTIGATOR.order=2160
+
+NC_MANAGER.value=Nonconformance Manager
+NC_MANAGER.shortDescription=Nonconformance Manager
+NC_MANAGER.order=2170
+
+NC_DISPOSITIONER.value=Nonconformance Dispositioner
+NC_DISPOSITIONER.shortDescription=Nonconformance Dispositioner
+NC_DISPOSITIONER.order=2180
+
+NC_MRBREVIEWER.value=Material Review Board Reviewer 
+NC_MRBREVIEWER.shortDescription=Material Review Board Reviewer 
+NC_MRBREVIEWER.order=2190
+
+NC_SCRAPPER.value=Nonconformance Scrapper
+NC_SCRAPPER.shortDescription=Nonconformance Scrapper
+NC_SCRAPPER.order=2200
+
+NC_REWORKER.value=Nonconformance Reworker
+NC_REWORKER.shortDescription=Nonconformance Reworker
+NC_REWORKER.order=2210
+
+NC_REUSER.value=Nonconformance Reuser
+NC_REUSER.shortDescription=Nonconformance Reuser
+NC_REUSER.order=2220
+
+NC_VENDOR.value=Nonconformance Vendor
+NC_VENDOR.shortDescription=Nonconformance Vendor
+NC_VENDOR.order=2230
+
+NC_REUSEAPPROVER.value=Nonconformance Reuse Approver
+NC_REUSEAPPROVER.shortDescription=Nonconformance Reuse Approver
+NC_REUSEAPPROVER.order=2240
+
+QUALITYDOCUMENTCREATOR.value=Quality Document Creator
+QUALITYDOCUMENTCREATOR.shortDescription=Quality Document Creator
+QUALITYDOCUMENTCREATOR.order=2250
+
+# CEM Roles
+COMPLAINT_CREATOR.value=Customer Experience Creator
+COMPLAINT_CREATOR.shortDescription=Customer Experience Creator
+COMPLAINT_CREATOR.order=2260
+
+COMPLAINT_EVALUATOR.value=Customer Experience Evaluator
+COMPLAINT_EVALUATOR.shortDescription=Customer Experience Evaluator
+COMPLAINT_EVALUATOR.order=2270
+
+COMPLAINT_MANAGER.value=Customer Experience Manager
+COMPLAINT_MANAGER.shortDescription=Customer Experience Manager
+COMPLAINT_MANAGER.order=2290
+
+COMPLAINT_REVIEWER.value=Customer Experience Reviewer
+COMPLAINT_REVIEWER.shortDescription=Customer Experience Reviewer
+COMPLAINT_REVIEWER.order=2300
+
+COMPLAINT_PRODUCT_INVESTIGATOR.value=Customer Experience Product Investigator
+COMPLAINT_PRODUCT_INVESTIGATOR.shortDescription=Customer Experience Product Investigator
+COMPLAINT_PRODUCT_INVESTIGATOR.order=2310
+
+COMPLAINT_PRODUCT_RECEIVER.value=Customer Experience Product Receiver
+COMPLAINT_PRODUCT_RECEIVER.shortDescription=Customer Experience Product Receiver
+COMPLAINT_PRODUCT_RECEIVER.order=2320
+
+ACTIVITY_RESPONDENT.value=Activity Respondent
+ACTIVITY_RESPONDENT.shortDescription=Activity Respondent
+ACTIVITY_RESPONDENT.order=2330
+
+ACTIVITY_REVIEWER.value=Activity Reviewer
+ACTIVITY_REVIEWER.shortDescription=Activity Reviewer
+ACTIVITY_REVIEWER.order=2340
+
+RECEIVED DELIVERY MANAGER.value=Received Delivery Manager
+RECEIVED DELIVERY MANAGER.shortDescription=Received Delivery Manager
+RECEIVED DELIVERY MANAGER.order=2350
+
+# SMB Roles
+CAD AUTHOR.value=CAD Author
+CAD AUTHOR.shortDescription=CAD Author role
+CAD AUTHOR.order=2370
+
+CONTRIBUTOR.value=Contributor
+CONTRIBUTOR.shortDescription=Contributor role
+CONTRIBUTOR.order=2390
+
+MANAGER.value=Manager
+MANAGER.shortDescription=Manager role
+MANAGER.order=2400
+
+VIEWER.value=Viewer
+VIEWER.shortDescription=Viewer role
+VIEWER.order=2410
+
+# Regulatory Reporting Roles
+REGULATORY_REPORT_REVIEWER.value=Regulatory Report Reviewer
+REGULATORY_REPORT_REVIEWER.shortDescription=Regulatory Report Reviewer
+REGULATORY_REPORT_REVIEWER.order=2420
+
+REGULATORY_REPORT_CREATOR.value=Regulatory Report Creator
+REGULATORY_REPORT_CREATOR.shortDescription=Regulatory Report Creator
+REGULATORY_REPORT_CREATOR.order=2430
+
+REGULATORY_REPORT_APPROVER.value=Regulatory Report Approver
+REGULATORY_REPORT_APPROVER.shortDescription=Regulatory Report Approver
+REGULATORY_REPORT_APPROVER.order=2440
+
+# TDO Design Team Roles
+TEAM_DESIGN_LOGICAL_INTEGRATOR.value=Team Design Logical Integrator 
+TEAM_DESIGN_LOGICAL_INTEGRATOR.shortDescription=Team Design Logical Integrator
+TEAM_DESIGN_LOGICAL_INTEGRATOR.order=2450
+
+TEAM_DESIGN_PHYSICAL_INTEGRATOR.value=Team Design Physical Integrator 
+TEAM_DESIGN_PHYSICAL_INTEGRATOR.shortDescription=Team Design Physical Integrator
+TEAM_DESIGN_PHYSICAL_INTEGRATOR.order=2460
+
+TEAM_DESIGN_MEMBER.value=Team Design Member 
+TEAM_DESIGN_MEMBER.shortDescription=Team Design Member
+TEAM_DESIGN_MEMBER.order=2470
+
+UDICREATOR.value=UDI Creator
+UDICREATOR.shortDescription=Unique Device Identification Creator
+UDICREATOR.order=2490
+
+UDIAPPROVER.value=UDI Approver
+UDIAPPROVER.shortDescription=Unique Device Identification Approver
+UDIAPPROVER.order=2500
+
+UDIMANAGER.value=UDI Manager
+UDIMANAGER.shortDescription=UDI Manager is no longer used by the default configuration. Move all members of the UDI Manager role to the Library Manager role.
+UDIMANAGER.order=2510
+
+RELIABILITYENGINEER.value=Reliability Engineer
+RELIABILITYENGINEER.shortDescription=Reliability Engineer
+RELIABILITYENGINEER.order=2511
+
+# Rules Roles
+META LIBRARY ADMINISTRATOR.value=Meta Library Administrator
+META LIBRARY ADMINISTRATOR.shortDescription=Meta Library Administrator Role
+META LIBRARY ADMINISTRATOR.order=2560
+
+####################################################################################
+YJDJ_Design.value=Design
+YJDJ_Design.shortDescription=Design in workflow
+YJDJ_Design.order=0
+
+YJDJ_check.value=check
+YJDJ_check.shortDescription=check  in workflow
+YJDJ_check.order=1
+
+YJDJ_Supervisor_design.value=Supervisor design
+YJDJ_Supervisor_design.shortDescription=Supervisor design
+YJDJ_Supervisor_design.order=2
+
+YJDJ_Process_countersign.value=Process countersign
+YJDJ_Process_countersign.shortDescription=Process countersign
+YJDJ_Process_countersign.order=3
+
+YJDJ_System_sign.value=System sign
+YJDJ_System_sign.shortDescription=System sign
+YJDJ_System_sign.order=1041
+
+YJDJ_Welding_sign.value=Welding sign
+YJDJ_Welding_sign.shortDescription=Welding sign
+YJDJ_Welding_sign.order=1042
+
+YJDJ_Standardization.value=Standardization
+YJDJ_Standardization.shortDescription=Standardization
+YJDJ_Standardization.order=5
+
+YJDJ_Auditing.value=Auditing
+YJDJ_Auditing.shortDescription=Auditing
+YJDJ_Auditing.order=6
+
+YJDJ_Approval.value=Approval
+YJDJ_Approval.shortDescription=Approval
+YJDJ_Approval.order=7
+
+YJDJ_Workflow_countersign.value=Workflow countersign
+YJDJ_Workflow_countersign.shortDescription=Workflow countersign
+YJDJ_Workflow_countersign.order=1080
+
+YJDJ_Insulation_Auditing.value=Insulation Auditing
+YJDJ_Insulation_Auditing.shortDescription=Insulation Auditing
+YJDJ_Insulation_Auditing.order=1090
+
+YJDJ_LCC_countersign.value=LCC countersign
+YJDJ_LCC_countersign.shortDescription=LCC countersign
+YJDJ_LCC_countersign.order=1100
+
+YJDJ_ProfessionGroup_countersign.value=ProfessionGroup countersign
+YJDJ_ProfessionGroup_countersign.shortDescription=ProfessionGroup countersign
+YJDJ_ProfessionGroup_countersign.order=1110
+
+YJDJ_Data_Organize.value=Data Organize
+YJDJ_Data_Organize.shortDescription=Data Organize
+YJDJ_Data_Organize.order=1120
+
+YJDJ_Data_Receive.value=Data Receive
+YJDJ_Data_Receive.shortDescription=DataReceive
+YJDJ_Data_Receive.order=1130
+
+YJDJ_Product_Purchase.value=Product Purchase
+YJDJ_Product_Purchase.shortDescription=Product Purchase
+YJDJ_Product_Purchase.order=1140
+
+YJDJ_GONGYI_JIAODUI.value=GONGYI_JIAODUI
+YJDJ_GONGYI_JIAODUI.shortDescription=GONGYI_JIAODUI
+YJDJ_GONGYI_JIAODUI.order=5
+
+YJDJ_GONGYI_SHENHE.value=GONGYI_SHENHE
+YJDJ_GONGYI_SHENHE.shortDescription=GONGYI_SHENHE
+YJDJ_GONGYI_SHENHE.order=6
+
+YJDJ_DINGE_WEIHU.value=DINGE WEIHU
+YJDJ_DINGE_WEIHU.shortDescription=DINGE WEIHU
+YJDJ_DINGE_WEIHU.order=4

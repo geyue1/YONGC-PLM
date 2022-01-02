@@ -1,0 +1,812 @@
+﻿ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+APPROVER.value=批准者
+APPROVER.shortDescription=批准者角色
+APPROVER.order=10
+
+APPROVER_LEVEL_1.value=批准者 - 级别 I
+APPROVER_LEVEL_1.shortDescription=OOTB 模板两个级别的批准进程中的级别 1 批准的批准者角色
+APPROVER_LEVEL_1.order=11
+
+APPROVER_LEVEL_2.value=批准者 - 级别 II
+APPROVER_LEVEL_2.shortDescription=OOTB 模板两个级别的批准进程中的级别 2 批准的批准者角色
+APPROVER_LEVEL_2.order=12
+
+ASSIGNEE.value=工作负责人
+ASSIGNEE.shortDescription=工作负责人角色
+ASSIGNEE.order=40
+
+AUDITOR.value=审计者
+AUDITOR.shortDescription=审计者角色
+AUDITOR.order=20
+
+AUTHOR.value=作者
+AUTHOR.shortDescription=作者角色
+AUTHOR.order=30
+
+CHANGE MANAGER.value=更改管理者
+CHANGE MANAGER.shortDescription=更改管理者角色
+CHANGE MANAGER.order=50
+
+CHANGE OWNER.value=更改所有者
+CHANGE OWNER.shortDescription=更改所有者角色
+CHANGE OWNER.order=60
+
+CHEMICAL ENGINEER.value=化学工程师
+CHEMICAL ENGINEER.shortDescription=化学工程师角色
+CHEMICAL ENGINEER.order=70
+
+COLLABORATION MANAGER.value=协作管理者
+COLLABORATION MANAGER.shortDescription=协作管理者角色
+COLLABORATION MANAGER.order=72
+
+CONSULTANT.value=顾问
+CONSULTANT.shortDescription=顾问角色
+CONSULTANT.order=73
+
+CONTRACTOR.value=签约者
+CONTRACTOR.shortDescription=签约者角色
+CONTRACTOR.order=75
+
+CONTROLLER.value=控制者
+CONTROLLER.shortDescription=控制者角色
+CONTROLLER.order=80
+
+CUSTOMER.value=客户
+CUSTOMER.shortDescription=客户角色
+CUSTOMER.order=90
+
+DESIGN ENGINEER.value=设计工程师
+DESIGN ENGINEER.shortDescription=设计工程师角色
+DESIGN ENGINEER.order=110
+
+DESIGNER.value=设计者
+DESIGNER.shortDescription=设计者角色
+DESIGNER.order=100
+
+DETAILER.value=细节实施者
+DETAILER.shortDescription=细节实施者角色
+DETAILER.order=120
+
+ENGINEER.value=工程师
+ENGINEER.shortDescription=工程师角色
+ENGINEER.order=125
+
+FIELD ENGINEER.value=现场工程师
+FIELD ENGINEER.shortDescription=现场工程师角色
+FIELD ENGINEER.order=130
+
+GROUP LEADER.value=小组负责人
+GROUP LEADER.shortDescription=小组负责人角色
+GROUP LEADER.order=135
+
+HYDRAULIC ENGINEER.value=水利工程师
+HYDRAULIC ENGINEER.shortDescription=水利工程师角色
+HYDRAULIC ENGINEER.order=140
+
+ILLUSTRATOR.value=图解者
+ILLUSTRATOR.shortDescription=图解者角色
+ILLUSTRATOR.order=145
+
+#(This is the correct spelling for implementor - please do not change)
+IMPLEMENTOR.value=实施者
+IMPLEMENTOR.shortDescription=实施者角色 
+IMPLEMENTOR.order=150
+
+INDUSTRIAL ENGINEER.value=工业工程师
+INDUSTRIAL ENGINEER.shortDescription=工业工程师角色
+INDUSTRIAL ENGINEER.order=160
+
+LOGIC ENGINEER.value=逻辑工程师
+LOGIC ENGINEER.shortDescription=逻辑工程师角色
+LOGIC ENGINEER.order=170
+
+MANUFACTURER.value=制造商
+MANUFACTURER.shortDescription=制造商角色
+MANUFACTURER.order=180
+
+MANUFACTURING ENGINEER.value=制造工程师
+MANUFACTURING ENGINEER.shortDescription=制造工程师角色
+MANUFACTURING ENGINEER.order=190
+
+MANUFACTURING MANAGER.value=制造管理者
+MANUFACTURING MANAGER.shortDescription=制造管理者角色
+MANUFACTURING MANAGER.order=200
+
+MATERIAL ENGINEER.value=物料工程师
+MATERIAL ENGINEER.shortDescription=物料工程师角色
+MATERIAL ENGINEER.order=210
+
+MEMBERS.value=成员
+MEMBERS.shortDescription=成员角色
+MEMBERS.order=215
+
+GUEST.value=访客
+GUEST.shortDescription=访客角色
+GUEST.order=217
+
+NC PROGRAMMER.value=NC 程序员
+NC PROGRAMMER.shortDescription=NC 程序员角色
+NC PROGRAMMER.order=220
+
+OBSERVER.value=观察者
+OBSERVER.shortDescription=观察者角色
+OBSERVER.order=230
+
+OEM.value=OEM
+OEM.shortDescription=OEM 角色
+OEM.order=233
+
+ORGANIZATION LEADER.value=组织负责人
+ORGANIZATION LEADER.shortDescription=组织负责人角色
+ORGANIZATION LEADER.order=235
+
+OWNER.value=所有者
+OWNER.shortDescription=所有者角色
+OWNER.order=240
+
+PARTS AUTHOR.value=部件作者
+PARTS AUTHOR.shortDescription=负责创建服务信息部件列表的团队成员
+PARTS AUTHOR.order=245
+
+PLANNER.value=规划者
+PLANNER.shortDescription=规划者角色
+PLANNER.order=250
+
+PRODUCTION PLANNER.value=生产规划者
+PRODUCTION PLANNER.shortDescription=生产规划者角色
+PRODUCTION PLANNER.order=260
+
+PROGRAM DIRECTOR.value=项目群主管
+PROGRAM DIRECTOR.shortDescription=项目群主管角色
+PROGRAM DIRECTOR.order=265
+
+PROGRAM MANAGER.value=项目群经理
+PROGRAM MANAGER.shortDescription=项目群经理角色
+PROGRAM MANAGER.order=280
+
+PROJECT ACCOUNTANT.value=项目会计师
+PROJECT ACCOUNTANT.shortDescription=项目会计师角色
+PROJECT ACCOUNTANT.order=285
+
+PROJECT ADMINISTRATOR.value=项目管理员
+PROJECT ADMINISTRATOR.shortDescription=项目管理员角色
+PROJECT ADMINISTRATOR.order=287
+
+PROJECT ENGINEER.value=项目工程师
+PROJECT ENGINEER.shortDescription=项目工程师角色
+PROJECT ENGINEER.order=290
+
+PROJECT MANAGER.value=项目经理
+PROJECT MANAGER.shortDescription=项目经理角色
+PROJECT MANAGER.order=295
+
+PROJECT SPONSOR.value=项目发起人
+PROJECT SPONSOR.shortDescription=项目发起人角色
+PROJECT SPONSOR.order=297
+
+PROMOTER.value=升级者
+PROMOTER.shortDescription=升级者角色
+PROMOTER.order=300
+
+PUBLICATIONS MANAGER.value=发布管理者
+PUBLICATIONS MANAGER.shortDescription=负责创建 SIS 信息结构和发布结构的团队成员
+PUBLICATIONS MANAGER.order=305
+
+PURCHASING AGENT.value=采购员
+PURCHASING AGENT.shortDescription=采购员角色
+PURCHASING AGENT.order=310
+
+QUALITY ENGINEER.value=质量工程师
+QUALITY ENGINEER.shortDescription=质量工程师角色
+QUALITY ENGINEER.order=320
+
+QUALITY MANAGER.value=质量管理者
+QUALITY MANAGER.shortDescription=质量管理者角色
+QUALITY MANAGER.order=330
+
+RESOURCE MANAGER.value=资源管理者
+RESOURCE MANAGER.shortDescription=资源管理者角色
+RESOURCE MANAGER.order=335
+
+REVIEWER.value=审阅者
+REVIEWER.shortDescription=审阅者角色
+REVIEWER.order=340
+REVIEWER.defaultValue=true
+
+SOFTWARE ENGINEER.value=软件工程师
+SOFTWARE ENGINEER.shortDescription=软件工程师角色
+SOFTWARE ENGINEER.order=350
+
+SUBMITTER.value=提交者
+SUBMITTER.shortDescription=提交者角色
+SUBMITTER.order=360
+
+SUGGESTOR.value=建议者
+SUGGESTOR.shortDescription=建议者角色
+SUGGESTOR.order=370
+
+SUPPLIER.value=供应商
+SUPPLIER.shortDescription=供应商角色
+SUPPLIER.order=380
+
+SUPPORT ENGINEER.value=支持工程师
+SUPPORT ENGINEER.shortDescription=支持工程师角色
+SUPPORT ENGINEER.order=390
+
+TEAM LEADER.value=团队负责人
+TEAM LEADER.shortDescription=团队负责人角色
+TEAM LEADER.order=395
+
+TESTER.value=测试者
+TESTER.shortDescription=测试者角色
+TESTER.order=400
+
+TOOL DESIGNER.value=工具设计者
+TOOL DESIGNER.shortDescription=工具设计者角色
+TOOL DESIGNER.order=410
+
+VENDOR.value=厂商
+VENDOR.shortDescription=厂商角色
+VENDOR.order=420
+
+EXPORTER.value=导出实施者
+EXPORTER.shortDescription=副本导出实施者角色
+EXPORTER.order=430
+
+IMPORTER.value=导入者
+IMPORTER.shortDescription=副本导入者角色
+IMPORTER.order=440
+
+PUBLISHER.value=发布者
+PUBLISHER.shortDescription=发布者角色
+PUBLISHER.order=450
+
+SUBSCRIBER.value=预订者
+SUBSCRIBER.shortDescription=预订者角色
+SUBSCRIBER.order=460
+
+REVIEW TEAM.value=审阅团队
+REVIEW TEAM.shortDescription=工作流的特殊 ProjectLink 角色
+REVIEW TEAM.order=470
+
+PROBLEM REPORT TEAM.value=问题报告团队
+PROBLEM REPORT TEAM.shortDescription=问题报告团队
+PROBLEM REPORT TEAM.order=500
+
+# This role collects the Problem report authors for change management
+PR AUTHOR.value=问题报告作者
+PR AUTHOR.shortDescription=问题报告作者
+PR AUTHOR.order=501
+
+# This role is the Change Admin I for change management
+CHANGE ADMINISTRATOR I.value=更改管理员 I
+CHANGE ADMINISTRATOR I.shortDescription=CAI
+CHANGE ADMINISTRATOR I.order=502
+
+# This role is the Change Admin II for change management
+CHANGE ADMINISTRATOR II.value=更改管理员 II
+CHANGE ADMINISTRATOR II.shortDescription=CAII
+CHANGE ADMINISTRATOR II.order=503
+
+# This role is the Change Admin III for change management
+CHANGE ADMINISTRATOR III.value=更改管理员 III
+CHANGE ADMINISTRATOR III.shortDescription=CAIII
+CHANGE ADMINISTRATOR III.order=504
+
+# This role is the CRB for a ECR in change management
+CHANGE REQUEST REVIEW BOARD.value=更改审阅委员会
+CHANGE REQUEST REVIEW BOARD.shortDescription=CRB
+CHANGE REQUEST REVIEW BOARD.order=505
+
+# This role is for the CIB in a ECN in change management
+CHANGE NOTICE IMPLEMENTATION BOARD.value=更改实施委员会
+CHANGE NOTICE IMPLEMENTATION BOARD.shortDescription=CIB
+CHANGE NOTICE IMPLEMENTATION BOARD.order=506
+
+# This role collects the ECR authors for change management
+ECR AUTHOR.value=更改请求作者
+ECR AUTHOR.shortDescription=更改请求作者
+ECR AUTHOR.order=507
+
+# This role collects the Software Defects authors for change management
+SW DEFECT AUTHOR.value=软件缺陷作者
+SW DEFECT AUTHOR.shortDescription=软件缺陷作者
+SW DEFECT AUTHOR.order=508
+
+SOURCING MANAGER.value=采购经理
+SOURCING MANAGER.shortDescription=采购经理
+SOURCING MANAGER.order=520
+
+SUPPLY CHAIN MANAGER.value=供应链经理
+SUPPLY CHAIN MANAGER.shortDescription=供应链经理
+SUPPLY CHAIN MANAGER.order=521
+
+RECIPIENT.value=收件人
+RECIPIENT.shortDescription=收件人角色
+RECIPIENT.order=522
+
+EVALUATOR.value=评估者
+EVALUATOR.shortDescription=评估者角色
+EVALUATOR.order=523
+
+RESPONDANT.value=响应者
+RESPONDANT.shortDescription=响应者角色
+RESPONDANT.order=524
+
+#The administrator of an OrgContainer
+ORG ADMIN.value=组织管理员
+ORG ADMIN.shortDescription=OrgContainer 管理员
+ORG ADMIN.order=600
+
+SHARED TEAM MANAGER.value=共享团队经理
+SHARED TEAM MANAGER.shortDescription=可以管理共享团队成员资格的用户
+SHARED TEAM MANAGER.order=630
+
+PROJECT CREATOR.value=项目创建者
+PROJECT CREATOR.shortDescription=在一个给定组织内可以创建项目的用户
+PROJECT CREATOR.order=610
+
+PRODUCT CREATOR.value=产品创建者
+PRODUCT CREATOR.shortDescription=在一个给定组织内可以创建产品的用户
+PRODUCT CREATOR.order=614
+
+PRODUCT MANAGER.value=产品管理者
+PRODUCT MANAGER.shortDescription=产品容器管理者
+PRODUCT MANAGER.order=616
+
+LIBRARY CREATOR.value=存储库创建者
+LIBRARY CREATOR.shortDescription=在一个给定组织内可以创建存储库的用户
+LIBRARY CREATOR.order=618
+
+LIBRARY MANAGER.value=存储库管理者
+LIBRARY MANAGER.shortDescription=存储库容器管理者
+LIBRARY MANAGER.order=620
+
+QMS MANAGER.value=质量系统管理者
+QMS MANAGER.shortDescription=质量容器管理者
+QMS MANAGER.order=755
+
+ESI ADMINISTRATOR.value=ESI 管理员
+ESI ADMINISTRATOR.shortDescription=ESI 工作流的特殊 ESI 角色
+ESI ADMINISTRATOR.order=700
+
+ESI ENGINEER.value=ESI 工程师
+ESI ENGINEER.shortDescription=ESI 工作流的特殊 ESI 角色
+ESI ENGINEER.order=701
+
+VP SALES.value=销售副总裁
+VP SALES.shortDescription=销售副总裁角色
+VP SALES.order=710
+
+VP RESEARCH AND DEVELOPMENT.value=研发副总裁
+VP RESEARCH AND DEVELOPMENT.shortDescription=研发副总裁
+VP RESEARCH AND DEVELOPMENT.order=720
+
+VP OPERATIONS.value=运营副总裁
+VP OPERATIONS.shortDescription=运营副总裁角色
+VP OPERATIONS.order=730
+
+VP MANUFACTURING.value=生产副总裁
+VP MANUFACTURING.shortDescription=生产副总裁角色
+VP MANUFACTURING.order=740
+
+PLANT MANAGER.value=工厂经理
+PLANT MANAGER.shortDescription=工厂经理角色
+PLANT MANAGER.order=750
+
+MANUFACTURING ENGINEERING MANAGER.value=制造工程经理
+MANUFACTURING ENGINEERING MANAGER.shortDescription=制造工程经理角色
+MANUFACTURING ENGINEERING MANAGER.order=760
+
+MARKETING.value=市场营销
+MARKETING.shortDescription=市场营销角色
+MARKETING.order=765
+
+QUALITY ASSURANCE MANAGER.value=质量检验经理
+QUALITY ASSURANCE MANAGER.shortDescription=质量检验经理角色
+QUALITY ASSURANCE MANAGER.order=770
+
+PROCUREMENT MANAGER.value=采购经理
+PROCUREMENT MANAGER.shortDescription=采购经理角色
+PROCUREMENT MANAGER.order=780
+
+PROCUREMENT ENGINEER.value=采购工程师
+PROCUREMENT ENGINEER.shortDescription=采购工程师角色
+PROCUREMENT ENGINEER.order=790
+
+PURCHASING MANAGER.value=采买经理
+PURCHASING MANAGER.shortDescription=采买经理角色
+PURCHASING MANAGER.order=800
+
+DESIGN TEAM LEADER.value=设计团队负责人
+DESIGN TEAM LEADER.shortDescription=设计团队负责人角色
+DESIGN TEAM LEADER.order=810
+
+PROMOTION APPROVERS.value=升级批准者
+PROMOTION APPROVERS.shortDescription=批准升级请求的团队成员。
+PROMOTION APPROVERS.order=820
+
+PROMOTION REVIEWERS.value=升级审阅者
+PROMOTION REVIEWERS.shortDescription=审阅升级请求的团队成员。
+PROMOTION REVIEWERS.order=830
+
+VARIANCE AUTHOR.value=超差作者
+VARIANCE AUTHOR.shortDescription=超差作者角色
+VARIANCE AUTHOR.order=840
+
+VARIANCE APPROVERS.value=超差批准者
+VARIANCE APPROVERS.shortDescription=批准“超差”的团队成员。
+VARIANCE APPROVERS.order=850
+
+#New Part Introduction roles
+SUPPLY BASE MANAGER.value=供应基地管理者
+SUPPLY BASE MANAGER.shortDescription=供应基地管理者
+SUPPLY BASE MANAGER.order=860
+
+COMPONENT ENGINEER.value=组件工程师
+COMPONENT ENGINEER.shortDescription=组件工程师
+COMPONENT ENGINEER.order=870
+
+NPR COORDINATOR.value=部件请求协调员
+NPR COORDINATOR.shortDescription=部件请求协调员
+NPR COORDINATOR.order=880
+
+EDA LIBRARIAN.value=EDA 库管理员
+EDA LIBRARIAN.shortDescription=EDA 库管理员
+EDA LIBRARIAN.order=890
+
+MCAD LIBRARIAN.value=MCAD 库管理员
+MCAD LIBRARIAN.shortDescription=MCAD 库管理员
+MCAD LIBRARIAN.order=900
+
+FOOTPRINT DESIGNER.value=轨迹设计师
+FOOTPRINT DESIGNER.shortDescription=轨迹设计师
+FOOTPRINT DESIGNER.order=910
+
+LOGIC SYMBOL DESIGNER.value=逻辑符号设计师
+LOGIC SYMBOL DESIGNER.shortDescription=逻辑符号设计师
+LOGIC SYMBOL DESIGNER.order=920
+
+MCAD DESIGNER.value=MCAD 设计师
+MCAD DESIGNER.shortDescription=MCAD 设计师
+MCAD DESIGNER.order=930
+
+# These roles are for WorkPackage
+PACKAGE MANAGER.value=包管理者
+PACKAGE MANAGER.shortDescription=包管理者
+PACKAGE MANAGER.order=940
+
+PACKAGE CONTRIBUTOR.value=包参与创作者
+PACKAGE CONTRIBUTOR.shortDescription=包参与创作者
+PACKAGE CONTRIBUTOR.order=950
+
+PACKAGE REVIEWER.value=包审阅者
+PACKAGE REVIEWER.shortDescription=包审阅者
+PACKAGE REVIEWER.order=960
+
+PACKAGE RECIPIENT.value=包收件人
+PACKAGE RECIPIENT.shortDescription=包收件人
+PACKAGE RECIPIENT.order=970
+
+PACKAGE APPROVER.value=包批准者
+PACKAGE APPROVER.shortDescription=包批准者
+PACKAGE APPROVER.order=980
+
+PACKAGE CREATOR.value=包创建者
+PACKAGE CREATOR.shortDescription=包创建者
+PACKAGE CREATOR.order=985
+
+OPTION ADMINISTRATOR.value=选项管理者
+OPTION ADMINISTRATOR.shortDescription=选项管理者
+OPTION ADMINISTRATOR.order=990
+
+SYS.value=系统
+SYS.shortDescription=系统
+SYS.order=1000
+
+CAPAREQUESTER.value=CAPA 请求者
+CAPAREQUESTER.shortDescription=CAPA 请求者
+CAPAREQUESTER.order=2000
+
+CAPAREVIEWER.value=CAPA 审阅者
+CAPAREVIEWER.shortDescription=CAPA 审阅者
+CAPAREVIEWER.order=2010
+
+CAPAINVESTIGATOR.value=CAPA 调查者
+CAPAINVESTIGATOR.shortDescription=CAPA 调查者
+CAPAINVESTIGATOR.order=2020
+
+CAPAPLANNER.value=CAPA 规划者
+CAPAPLANNER.shortDescription=CAPA 规划者
+CAPAPLANNER.order=2030
+
+CAPAIMPLEMENTER.value=CAPA 实施者
+CAPAIMPLEMENTER.shortDescription=CAPA 实施者
+CAPAIMPLEMENTER.order=2040
+
+CAPACONFIRMER.value=CAPA 确认者
+CAPACONFIRMER.shortDescription=CAPA 确认者
+CAPACONFIRMER.order=2050
+
+CAPAVERIFIER.value=CAPA 检验者
+CAPAVERIFIER.shortDescription=CAPA 检验者
+CAPAVERIFIER.order=2060
+
+CAPAEFFECTIVENESSAPPROVER.value=CAPA 有效性批准者
+CAPAEFFECTIVENESSAPPROVER.shortDescription=CAPA 有效性批准者
+CAPAEFFECTIVENESSAPPROVER.order=2070
+
+CAPAMANAGER.value=CAPA 管理者
+CAPAMANAGER.shortDescription=CAPA 管理者
+CAPAMANAGER.order=2080
+
+CAPAPLANAPPROVER.value=CAPA 计划批准者
+CAPAPLANAPPROVER.shortDescription=CAPA 计划批准者
+CAPAPLANAPPROVER.order=2090
+
+CAPAINVESTIGATIONAPPROVER.value=CAPA 调查批准者
+CAPAINVESTIGATIONAPPROVER.shortDescription=CAPA 调查批准者
+CAPAINVESTIGATIONAPPROVER.order=2100
+
+CAPAACTIONVERIFIER.value=CAPA 措施校验者
+CAPAACTIONVERIFIER.shortDescription=CAPA 措施校验者
+CAPAACTIONVERIFIER.order=2101
+
+CAPAACTIONEFFECTIVENESSAPPROVER.value=CAPA 措施有效性批准者
+CAPAACTIONEFFECTIVENESSAPPROVER.shortDescription=CAPA 措施有效性批准者
+CAPAACTIONEFFECTIVENESSAPPROVER.order=2102
+
+ENTITYCREATOR.value=人员和场所创建者
+ENTITYCREATOR.shortDescription=人员和场所创建者
+ENTITYCREATOR.order=2110
+
+QUALITYPARTCREATOR.value=质量部件创建者
+QUALITYPARTCREATOR.shortDescription=质量部件创建者
+QUALITYPARTCREATOR.order=2120
+
+NC_CREATOR.value=“不合格”创建者
+NC_CREATOR.shortDescription=“不合格”创建者
+NC_CREATOR.order=2130
+
+NC_EVALUATOR.value=“不合格”评估者
+NC_EVALUATOR.shortDescription=“不合格”评估者
+NC_EVALUATOR.order=2150
+ 
+NC_INVESTIGATOR.value=“不合格”调查者
+NC_INVESTIGATOR.shortDescription=“不合格”调查者
+NC_INVESTIGATOR.order=2160
+
+NC_MANAGER.value=“不合格”管理者
+NC_MANAGER.shortDescription=“不合格”管理者
+NC_MANAGER.order=2170
+
+NC_DISPOSITIONER.value=“不合格”处置者
+NC_DISPOSITIONER.shortDescription=“不合格”处置者
+NC_DISPOSITIONER.order=2180
+
+NC_MRBREVIEWER.value=材料审阅委员会审阅者
+NC_MRBREVIEWER.shortDescription=材料审阅委员会审阅者
+NC_MRBREVIEWER.order=2190
+
+NC_SCRAPPER.value=“不合格”清除者
+NC_SCRAPPER.shortDescription=“不合格”清除者
+NC_SCRAPPER.order=2200
+
+NC_REWORKER.value=“不合格”返工者
+NC_REWORKER.shortDescription=“不合格”返工者
+NC_REWORKER.order=2210
+
+NC_REUSER.value=“不合格”重新使用者
+NC_REUSER.shortDescription=“不合格”重新使用者
+NC_REUSER.order=2220
+
+NC_VENDOR.value=“不合格”厂商
+NC_VENDOR.shortDescription=“不合格”厂商
+NC_VENDOR.order=2230
+
+NC_REUSEAPPROVER.value=“不合格”重新使用批准者
+NC_REUSEAPPROVER.shortDescription=“不合格”重新使用批准者
+NC_REUSEAPPROVER.order=2240
+
+QUALITYDOCUMENTCREATOR.value=质量文档创建者
+QUALITYDOCUMENTCREATOR.shortDescription=质量文档创建者
+QUALITYDOCUMENTCREATOR.order=2250
+
+# CEM Roles
+COMPLAINT_CREATOR.value=客户体验创建者
+COMPLAINT_CREATOR.shortDescription=客户体验创建者
+COMPLAINT_CREATOR.order=2260
+
+COMPLAINT_EVALUATOR.value=客户体验评估者
+COMPLAINT_EVALUATOR.shortDescription=客户体验评估者
+COMPLAINT_EVALUATOR.order=2270
+
+COMPLAINT_MANAGER.value=客户体验管理者
+COMPLAINT_MANAGER.shortDescription=客户体验管理者
+COMPLAINT_MANAGER.order=2290
+
+COMPLAINT_REVIEWER.value=客户体验审阅者
+COMPLAINT_REVIEWER.shortDescription=客户体验审阅者
+COMPLAINT_REVIEWER.order=2300
+
+COMPLAINT_PRODUCT_INVESTIGATOR.value=客户体验产品调查者
+COMPLAINT_PRODUCT_INVESTIGATOR.shortDescription=客户体验产品调查者
+COMPLAINT_PRODUCT_INVESTIGATOR.order=2310
+
+COMPLAINT_PRODUCT_RECEIVER.value=客户体验产品接收者
+COMPLAINT_PRODUCT_RECEIVER.shortDescription=客户体验产品接收者
+COMPLAINT_PRODUCT_RECEIVER.order=2320
+
+ACTIVITY_RESPONDENT.value=活动响应者
+ACTIVITY_RESPONDENT.shortDescription=活动响应者
+ACTIVITY_RESPONDENT.order=2330
+
+ACTIVITY_REVIEWER.value=活动审阅者
+ACTIVITY_REVIEWER.shortDescription=活动审阅者
+ACTIVITY_REVIEWER.order=2340
+
+RECEIVED DELIVERY MANAGER.value=收到的交付管理者
+RECEIVED DELIVERY MANAGER.shortDescription=收到的交付管理者
+RECEIVED DELIVERY MANAGER.order=2350
+
+# SMB Roles
+CAD AUTHOR.value=CAD 作者
+CAD AUTHOR.shortDescription=CAD 作者角色
+CAD AUTHOR.order=2370
+
+CONTRIBUTOR.value=参与创作者
+CONTRIBUTOR.shortDescription=参与创作者角色
+CONTRIBUTOR.order=2390
+
+MANAGER.value=管理者
+MANAGER.shortDescription=管理者角色
+MANAGER.order=2400
+
+VIEWER.value=查看者
+VIEWER.shortDescription=查看者角色
+VIEWER.order=2410
+
+# Regulatory Reporting Roles
+REGULATORY_REPORT_REVIEWER.value=管理报告审阅者
+REGULATORY_REPORT_REVIEWER.shortDescription=管理报告审阅者
+REGULATORY_REPORT_REVIEWER.order=2420
+
+REGULATORY_REPORT_CREATOR.value=管理报告创建者
+REGULATORY_REPORT_CREATOR.shortDescription=管理报告创建者
+REGULATORY_REPORT_CREATOR.order=2430
+
+REGULATORY_REPORT_APPROVER.value=管理报告审批者
+REGULATORY_REPORT_APPROVER.shortDescription=管理报告审批者
+REGULATORY_REPORT_APPROVER.order=2440
+
+# TDO Design Team Roles
+TEAM_DESIGN_LOGICAL_INTEGRATOR.value=团队设计逻辑集成者
+TEAM_DESIGN_LOGICAL_INTEGRATOR.shortDescription=团队设计逻辑集成者
+TEAM_DESIGN_LOGICAL_INTEGRATOR.order=2450
+
+TEAM_DESIGN_PHYSICAL_INTEGRATOR.value=团队设计实际集成者
+TEAM_DESIGN_PHYSICAL_INTEGRATOR.shortDescription=团队设计实际集成者
+TEAM_DESIGN_PHYSICAL_INTEGRATOR.order=2460
+
+TEAM_DESIGN_MEMBER.value=团队设计成员
+TEAM_DESIGN_MEMBER.shortDescription=团队设计成员
+TEAM_DESIGN_MEMBER.order=2470
+
+UDICREATOR.value=UDI 创建者
+UDICREATOR.shortDescription=Unique Device Identification 创建者
+UDICREATOR.order=2490
+
+UDIAPPROVER.value=UDI 批准者
+UDIAPPROVER.shortDescription=Unique Device Identification 批准者
+UDIAPPROVER.order=2500
+
+UDIMANAGER.value=UDI 管理者
+UDIMANAGER.shortDescription=“UDI 管理者”不再用于默认配置。请将其所有成员移至“存储库管理者”角色。
+UDIMANAGER.order=2510
+
+RELIABILITYENGINEER.value=可靠性工程师
+RELIABILITYENGINEER.shortDescription=可靠性工程师
+RELIABILITYENGINEER.order=2511
+
+# Rules Roles
+META LIBRARY ADMINISTRATOR.value=元数据库管理员
+META LIBRARY ADMINISTRATOR.shortDescription=元数据库管理员角色
+META LIBRARY ADMINISTRATOR.order=2560
+
+#####################################################################################
+YJDJ_Design.value=设计
+YJDJ_Design.shortDescription=评审流程用设计节点
+YJDJ_Design.order=0
+
+YJDJ_check.value=校核
+YJDJ_check.shortDescription=评审流程预留角色
+YJDJ_check.order=1
+
+YJDJ_Supervisor_design.value=主管设计
+YJDJ_Supervisor_design.shortDescription=评审流程预留角色
+YJDJ_Supervisor_design.order=2
+
+YJDJ_Process_countersign.value=工艺会签
+YJDJ_Process_countersign.shortDescription=评审流程用工艺会签节点
+YJDJ_Process_countersign.order=3
+
+YJDJ_System_sign.value=系统会签
+YJDJ_System_sign.shortDescription=评审流程预留角色
+YJDJ_System_sign.order=1041
+
+YJDJ_Welding_sign.value=焊接会签
+YJDJ_Welding_sign.shortDescription=评审流程预留角色
+YJDJ_Welding_sign.order=1042
+
+YJDJ_Standardization.value=标准化
+YJDJ_Standardization.shortDescription=评审流程用标准化节点
+YJDJ_Standardization.order=5
+
+YJDJ_Auditing.value=审核
+YJDJ_Auditing.shortDescription=评审流程用审核节点
+YJDJ_Auditing.order=6
+
+YJDJ_Approval.value=批准
+YJDJ_Approval.shortDescription=评审流程用批准节点
+YJDJ_Approval.order=7
+
+YJDJ_Workflow_countersign.value=流程会签
+YJDJ_Workflow_countersign.shortDescription=流程会签
+YJDJ_Workflow_countersign.order=1080
+
+YJDJ_Insulation_Auditing.value=绝缘审查
+YJDJ_Insulation_Auditing.shortDescription=绝缘审查
+YJDJ_Insulation_Auditing.order=3
+
+YJDJ_LCC_countersign.value=可靠性会签
+YJDJ_LCC_countersign.shortDescription=可靠性会签
+YJDJ_LCC_countersign.order=4
+
+YJDJ_ProfessionGroup_countersign.value=专业组校核
+YJDJ_ProfessionGroup_countersign.shortDescription=专业组校核
+YJDJ_ProfessionGroup_countersign.order=1110
+
+YJDJ_Data_Organize.value=资料归档
+YJDJ_Data_Organize.shortDescription=资料归档
+YJDJ_Data_Organize.order=1120
+
+YJDJ_Data_Receive.value=资料接收
+YJDJ_Data_Receive.shortDescription=资料接收
+YJDJ_Data_Receive.order=1130
+
+YJDJ_Product_Purchase.value=物质采购
+YJDJ_Product_Purchase.shortDescription=物质采购
+YJDJ_Product_Purchase.order=1140
+
+YJDJ_GONGYI_JIAODUI.value=工艺校对
+YJDJ_GONGYI_JIAODUI.shortDescription=工艺校对
+YJDJ_GONGYI_JIAODUI.order=5
+
+YJDJ_GONGYI_SHENHE.value=工艺审核
+YJDJ_GONGYI_SHENHE.shortDescription=工艺审核
+YJDJ_GONGYI_SHENHE.order=6
+
+YJDJ_DINGE_WEIHU.value=定额维护
+YJDJ_DINGE_WEIHU.shortDescription=定额维护
+YJDJ_DINGE_WEIHU.order=4

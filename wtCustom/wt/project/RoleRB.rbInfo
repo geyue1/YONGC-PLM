@@ -1,0 +1,102 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.replacement=false
+ResourceInfo.UUID=8db111cc-5428-4d8b-b2e9-ed3a5b20baf0
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+YJDJ_Design.value=Design
+YJDJ_Design.shortDescription=Design in workflow
+YJDJ_Design.order=1010
+
+YJDJ_check.value=check
+YJDJ_check.shortDescription=check  in workflow
+YJDJ_check.order=1020
+
+YJDJ_Supervisor_design.value=Supervisor design
+YJDJ_Supervisor_design.shortDescription=Supervisor design
+YJDJ_Supervisor_design.order=1030
+
+YJDJ_Process_countersign.value=Process countersign
+YJDJ_Process_countersign.shortDescription=Process countersign
+YJDJ_Process_countersign.order=1040
+
+YJDJ_System_sign.value=System sign
+YJDJ_System_sign.shortDescription=System sign
+YJDJ_System_sign.order=1041
+
+YJDJ_Welding_sign.value=Welding sign
+YJDJ_Welding_sign.shortDescription=Welding sign
+YJDJ_Welding_sign.order=1042
+
+YJDJ_Standardization.value=Standardization
+YJDJ_Standardization.shortDescription=Standardization
+YJDJ_Standardization.order=1050
+
+YJDJ_Auditing.value=Auditing
+YJDJ_Auditing.shortDescription=Auditing
+YJDJ_Auditing.order=1060
+
+YJDJ_Approval.value=Approval
+YJDJ_Approval.shortDescription=Approval
+YJDJ_Approval.order=1070
+
+YJDJ_Workflow_countersign.value=Workflow countersign
+YJDJ_Workflow_countersign.shortDescription=Workflow countersign
+YJDJ_Workflow_countersign.order=1080
+
+YJDJ_Insulation_Auditing.value=Insulation Auditing
+YJDJ_Insulation_Auditing.shortDescription=Insulation Auditing
+YJDJ_Insulation_Auditing.order=1090
+
+YJDJ_LCC_countersign.value=LCC countersign
+YJDJ_LCC_countersign.shortDescription=LCC countersign
+YJDJ_LCC_countersign.order=1100
+
+YJDJ_ProfessionGroup_countersign.value=ProfessionGroup countersign
+YJDJ_ProfessionGroup_countersign.shortDescription=ProfessionGroup countersign
+YJDJ_ProfessionGroup_countersign.order=1110
+
+YJDJ_Data_Organize.value=Data Organize
+YJDJ_Data_Organize.shortDescription=Data Organize
+YJDJ_Data_Organize.order=1120
+
+YJDJ_Data_Receive.value=Data Receive
+YJDJ_Data_Receive.shortDescription=DataReceive
+YJDJ_Data_Receive.order=1130
+
+YJDJ_Product_Purchase.value=Product Purchase
+YJDJ_Product_Purchase.shortDescription=Product Purchase
+YJDJ_Product_Purchase.order=1140
+
+YJDJ_GONGYI_JIAODUI.value=GONGYI_JIAODUI
+YJDJ_GONGYI_JIAODUI.shortDescription=GONGYI_JIAODUI
+YJDJ_GONGYI_JIAODUI.order=1150
+
+YJDJ_GONGYI_SHENHE.value=GONGYI_SHENHE
+YJDJ_GONGYI_SHENHE.shortDescription=GONGYI_SHENHE
+YJDJ_GONGYI_SHENHE.order=1160
+
+YJDJ_DINGE_WEIHU.value=定额维护
+YJDJ_DINGE_WEIHU.shortDescription=定额维护
+YJDJ_DINGE_WEIHU.order=1170
+
+

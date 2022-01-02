@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader
+  SYSTEM "standardX24.dtd">
+<NmLoader>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>YONGC_Custom</csvname>
+      <csvhierarchyDisplayName>YONGC_Custom</csvhierarchyDisplayName>
+      <csvorganizerPaths></csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name/>
+      <csvdescription/>
+      <csvdata_type>ORG</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier/>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>fileID</csvname>
+      <csvhierarchyDisplayName>文件代号</csvhierarchyDisplayName>
+      <csvorganizerPaths>YONGC_Custom</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>文件代号</csvdisplay_name>
+      <csvdescription>文件代号</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>fileID</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>PRODUCTNO</csvname>
+      <csvhierarchyDisplayName>产品型号</csvhierarchyDisplayName>
+      <csvorganizerPaths>YONGC_Custom</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>产品型号</csvdisplay_name>
+      <csvdescription>产品型号</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>PRODUCTNO</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>fileName2</csvname>
+      <csvhierarchyDisplayName>文件名称</csvhierarchyDisplayName>
+      <csvorganizerPaths>YONGC_Custom</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>文件名称</csvdisplay_name>
+      <csvdescription>文件名称</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>fileName2</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+   <csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+      <csvname>productName</csvname>
+      <csvhierarchyDisplayName>产品名称</csvhierarchyDisplayName>
+      <csvorganizerPaths>YONGC_Custom</csvorganizerPaths>
+      <csvdefinitionPaths/>
+      <csvdisplay_name>产品名称</csvdisplay_name>
+      <csvdescription>产品名称</csvdescription>
+      <csvdata_type>STR</csvdata_type>
+      <csvQoMName/>
+      <csvnameValuePairs/>
+      <csvlogicalIdentifier>productName</csvlogicalIdentifier>
+   </csvAttrDefinizer>
+</NmLoader>

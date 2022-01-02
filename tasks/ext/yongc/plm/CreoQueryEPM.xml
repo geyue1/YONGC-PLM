@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+<%@page import ="wt.federation.PrincipalManager.DirContext"%>
+<%@page import="wt.adapter.BasicWebjectDelegate"%>
+<%@page import="ext.yongc.plm.webservice.*"%>
+<%@page language="java" access="http|soap" session="false" import="java.util.*"%>
+<!--com.infoengine.soap.rpc.def
+creo query epmdocument in windchill.
+
+@param string name   EPMDcoument name
+@param string cname   EPMDcoument attribute
+@return com.ptc.windchill.ws.GenericBusinessObject[] ${output[*]} The resulting objects
+-->
+
+<%
+   System.out.println("--------- start CreoQueryEPM -----------------");
+   String name =(String) getParam("name");
+   String cname = (String)getParam("cname");
+  
+   
+   Group output = CreoQueryUtil.queryEPM(name,cname);
+   addGroup (output);
+%>
+
+
+<ie:webject name="Return-Groups" type="GRP">
+<ie:param name="CLASS" data="EPMDcoument"/>
+  <ie:param name="group_in" data="output"/>
+</ie:webject>
+<%
+   System.out.println("--------- end CreoQueryEPM -----------------");
+   
+%>

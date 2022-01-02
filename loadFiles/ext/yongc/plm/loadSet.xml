@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!DOCTYPE loadFileList SYSTEM "/wt/load/windchillLoad.dtd">
+
+<loadFileList>
+	
+  <!-- Soft Attributes Definition -->
+	<loadFile filename="ext/yongc/plm/Attribute/EPMDocument_0.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+	<loadFile filename="ext/yongc/plm/Attribute/EPMDocument_1.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+	<loadFile filename="ext/yongc/plm/Attribute/PromotionNotice_0.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+	<loadFile filename="ext/yongc/plm/Attribute/PromotionNotice_1.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+	<loadFile filename="ext/yongc/plm/Attribute/WTChangeOrder2_0.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+	<loadFile filename="ext/yongc/plm/Attribute/WTChangeOrder2_1.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+    <loadFile filename="ext/yongc/plm/Attribute/WTDocument_0.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+	<loadFile filename="ext/yongc/plm/Attribute/WTDocument_1.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+    <loadFile filename="ext/yongc/plm/Attribute/WTPart_0.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+	<loadFile filename="ext/yongc/plm/Attribute/WTPart_1.xml" title="Create Soft Attributes" containerPath="/"></loadFile> 
+  <!-- type -->
+  	<loadFile filename="ext/yongc/plm/SoftType/Createyongc/EPMDocument_2.xml" title="SoftType for yongc/plm Document" containerPath="/"></loadFile>
+	<loadFile filename="ext/yongc/plm/SoftType/Createyongc/PromotionNotice_2.xml" title="SoftType for  yongc/plm ECR" containerPath="/"></loadFile>
+	<loadFile filename="ext/yongc/plm/SoftType/Createyongc/WTDocument_2.xml" title="SoftType for  yongc/plm Part" containerPath="/"></loadFile>	
+	<loadFile filename="ext/yongc/plm/SoftType/Createyongc/WTPart_2.xml" title="SoftType for  yongc/plm Project" containerPath="/"></loadFile>
+
+   <!-- InitRule Defination
+	<loadFile filename="ext/yongc/plm/OIR/yongc/plm_SHEJILEIJISHUWENJIAN_Rule.xml" title="Init Rule for yongc/plm_设计类技术文件" containerPath="/"></loadFile>
+	-->
+	
+  <!-- load workflow templates
+	<loadFile filename="ext/yongc/plm/Workflow/WORKFLOW_yongc/plm_DOCUMENT_WF.xml" title="Init Rule for yongc/plm_设计文档审签流程" containerPath="/"></loadFile>
+	 -->
+
+
+
+  <!-- load lifecycle templates 
+	<loadFile filename="ext/yongc/plm/Lifecycle/yongc/plm_PROMOTION_LC.xml" title="Init Rule for yongc/plm_签审包生命周期" containerPath="/"></loadFile>
+	-->
+	
+  <!-- load container definition 	
+	<loadFile filename="ext/yongc/plm/Containers/yongc/plm_Product_Template.xml" title="Init Rule for 长安产品库模板" containerPath="/"></loadFile>
+	-->
+
+
+  <!-- Taskform Definitions -->
+	<!--loadFile filename="ext/yongc/plm/TaskForm/taskform.xml" title="Customize TaskFrom Template" containerPath="/wt.inf.container.OrgContainer=yongc/plm"></loadFile-->
+</loadFileList>
